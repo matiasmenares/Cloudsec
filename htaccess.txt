@@ -1,0 +1,23 @@
+# Activar RewriteEngine
+
+RewriteEngine on
+
+#Evita el listado de cualquier directorio en apache
+
+Options -Indexes
+
+
+RewriteCond %{REQUEST_FILENAME} !-d  
+RewriteCond %{REQUEST_FILENAME} !-f
+
+
+######## MOD 2 #######
+
+#3 variables
+Rewriterule ^(.*)/(.*)/(.*)/$ index.php?nav=$1&var1=$2var2=$3 [L]
+#2 variables
+Rewriterule ^(.*)/(.*)/$ index.php?nav=$1&var1=$2 [L]
+#1 variable
+Rewriterule ^(.*)/$ index.php?nav=$1 [L]
+
+

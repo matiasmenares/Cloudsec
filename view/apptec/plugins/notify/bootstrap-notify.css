@@ -1,0 +1,109 @@
+/*NOTIFICACIONES*/
+
+.callout{
+	padding:0;
+	box-shadow: 1px -1px 2px #eee;
+}
+.cerrar{
+	padding:5px 20px;
+	font-size:2em;
+}
+.text-apptec{
+	color:#54a97f;
+}
+.text-white{
+	color:#FFF;
+}
+.callout.callout-apptec {
+background-color: #c5e6d5;
+border-color: #54a97f;
+}
+.notifications {
+  z-index:1000;
+  position: fixed;
+}
+
+.navbar-static-top {
+z-index: 100;
+border-width: 0 0 1px;
+}
+
+/* Positioning */ 
+.notifications.top-right {
+  right: 10px;
+  top: 65px;
+}
+
+.notifications.top-center {
+  left: 40%;
+  top: 60px;
+}
+
+.notifications.top-left {
+  left: 10px;
+  top: 25px;
+}
+
+.notifications.bottom-left {
+  left: 10px;
+  bottom: 25px;
+}
+
+.notifications.bottom-right {
+  right: 10px;
+  bottom: 25px;
+}
+
+/* Notification Element */
+.notifications > div {
+  position: relative;
+  z-index: 9999;
+  margin: 5px 0px;
+}
+
+.close {
+  display: inline-block;
+  margin-top: 0px;
+  margin-right: 0px;
+  width: 9px;
+  height: 9px;
+  background-repeat: no-repeat !important;
+  text-indent: -10000px;
+  outline: none;
+  background-image: url("../../img/remove-icon-small.png") !important;
+}
+/* General Element */
+.bg-red-pink {
+  border-color: #e08283 !important;
+  background-image: none !important;
+  background-color: #e08283 !important;
+  color: white !important;
+}
+
+/* General Text & Icon Font Colors */
+.font-red-pink {
+  color: #e08283 !important;
+}
+/* General Element */
+.bg-green {
+  border-color: #35aa47 !important;
+  background-image: none !important;
+  background-color: #35aa47 !important;
+  color: white !important;
+}
+
+/* General Text & Icon Font Colors */
+.font-green {
+  color: #35aa47 !important;
+}
+.bg-red-thunderbird {
+  border-color: #d91e18 !important;
+  background-image: none !important;
+  background-color: #d91e18 !important;
+  color: white !important;
+}
+
+/* General Text & Icon Font Colors */
+.font-red-thunderbird {
+  color: #d91e18 !important;
+}

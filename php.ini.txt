@@ -1,0 +1,13 @@
+display_errors = Off
+
+log_errors = On
+
+allow_url_fopen = Off
+
+safe_mode = On
+
+expose_php = Off
+
+enable_dl = Off
+
+disable_functions = system, show_source, symlink, exec, dl, shell_exec, passthru, phpinfo, escapeshellarg, escapeshellcmd
