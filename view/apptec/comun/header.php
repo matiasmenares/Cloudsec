@@ -22,10 +22,6 @@
 		        <!-- END RESPONSIVE MENU TOGGLER -->
 		        <!-- BEGIN TOP NAVIGATION MENU -->
 		        <li>
-		        <div class="switch">
-            <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
-            <label for="cmn-toggle-1"></label>
-          </div>
 		        </li>
             	<?php include(TEMPLATE.'comun/notificacion.php'); ?>
 		        <!-- BEGIN USER LOGIN DROPDOWN -->

@@ -50,6 +50,13 @@
                 <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
+            <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
+                <a href="categoria/lista/">
+                <i class="fa fa-rocket"></i>
+                <span class="title">Apps</span>
+                <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
+                </a>
+            </li>
             <li  <?php if($_SESSION['menu']=='lista-orden' or $_SESSION['menu']=='lista-distribuir-orden') echo 'class="active open"'; ?>>
                 <a href="javascript:;">
                 <i class="fa fa-exchange"></i>

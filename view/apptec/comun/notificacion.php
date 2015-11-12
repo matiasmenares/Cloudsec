@@ -18,7 +18,7 @@
                                     <i class="fa fa-truck"></i>
                                     </span>
                                     Pedidos Pendientes. <span class="time">
-                                   <?php echo $this->notification->pedidosPendientes(); ?> </span>
+                                   </span>
                                     </a>
                                 </li>
                                 <li>
@@ -27,7 +27,7 @@
                                     <i class="fa fa-cubes"></i>
                                     </span>
                                     Stock Crítico. <span class="time">
-                                     <?php echo $this->notification->productosStockCritico(); ?> Productos </span>
+                                     Productos </span>
                                     </a>
                                 </li>
                                 <li>
@@ -36,7 +36,7 @@
                                     <i class="fa fa-cubes"></i>
                                     </span>
                                     Stock Cero. <span class="time">
-                                     <?php echo $this->notification->productosStockCero(); ?> Productos </span>
+                                    Productos </span>
                                     </a>
                                 </li>
                             </ul>

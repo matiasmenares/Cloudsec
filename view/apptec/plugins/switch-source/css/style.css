@@ -49,8 +49,8 @@
 input.cmn-toggle-round + label {
   padding: 2px;
   width: 120px;
-  height: 60px;
-  background-color: #dddddd;
+  height: 50px;
+  background-color: #2B3643;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
   -ms-border-radius: 60px;
