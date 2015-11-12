@@ -13,12 +13,8 @@
                 </div>
                 <!-- END SIDEBAR TOGGLER BUTTON -->
             </li>
-            <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
             <li class="sidebar-search-wrapper hidden-xs">
-                <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
-                <!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
-                <!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
-                <form class="sidebar-search" action="extra_search.html" method="POST">
+              <form class="sidebar-search" action="extra_search.html" method="POST">
                     <a href="javascript:;" class="remove">
                     <i class="icon-close"></i>
                     </a>
@@ -35,56 +31,29 @@
             </li>
             <li  <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="active"'; ?>>
                 <a href="sucursal/lista/">
-                <i class="fa fa-building"></i>
-                <span class="title">Sucursales</span>
+                <i class="fa fa-bug"></i>
+                <span class="title">Vulnerabilidades</span>
                 <span <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
-            <!--
-            <li  <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="active open"'; ?>>
-                <a href="javascript:;">
-                <i class="fa fa-building"></i>
-                <span class="title">Sucursales</span>
-                <span class="arrow <?php if($_SESSION['menu']=='lista-sucursal') echo 'open'; ?>"></span>
+            <li  <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="active"'; ?>>
+                <a href="sucursal/lista/">
+                <i class="fa fa-fire"></i>
+                <span class="title">Firewall</span>
                 <span <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="selected"'; ?>></span>
                 </a>
-                <ul class="sub-menu <?php if($_SESSION['menu']=='lista-sucursal') echo 'open'; ?>" <?php if($_SESSION['menu']=='lista-sucursal') echo 'style="display:block; "'; ?>>
-                    <li <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="active"'; ?>>
-                        <a href="lista-sucursal/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Sucursales</a>
-                    </li>
-				</ul>
             </li>
-            -->
             <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
                 <a href="categoria/lista/">
-                <i class="fa fa-tag"></i>
-                <span class="title">Categorías</span>
+                <i class="fa fa-search"></i>
+                <span class="title">Scanner</span>
                 <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
-            <!--
-            <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active open"'; ?>>
-                <a href="javascript:;">
-                <i class="fa fa-tag"></i>
-                <span class="title">Categorías</span>
-                <span class="arrow <?php if($_SESSION['menu']=='lista-categoria') echo 'open'; ?>"></span>
-                <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
-                </a>
-                <ul class="sub-menu <?php if($_SESSION['menu']=='lista-categoria') echo 'open'; ?>" <?php if($_SESSION['menu']=='lista-categoria') echo 'style="display:block; "'; ?>>
-                    <li <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
-                        <a href="lista-categoria/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Categorías</a>
-                    </li>
-				</ul>
-            </li>
-            -->
             <li  <?php if($_SESSION['menu']=='lista-orden' or $_SESSION['menu']=='lista-distribuir-orden') echo 'class="active open"'; ?>>
                 <a href="javascript:;">
-                <i class="fa fa-file-text-o"></i>
-                <span class="title">Compra</span>
+                <i class="fa fa-exchange"></i>
+                <span class="title">Logs</span>
                 <span class="arrow <?php if($_SESSION['menu']=='lista-orden' or $_SESSION['menu']=='lista-distribuir-orden') echo 'open'; ?>"></span>
                 <span <?php if($_SESSION['menu']=='lista-orden' or $_SESSION['menu']=='lista-distribuir-orden') echo 'class="selected"'; ?>></span>
                 </a>
@@ -112,165 +81,20 @@
                     </li>
 				</ul>
             </li>
-            <li  <?php if($_SESSION['menu']=='producto/lista' or $_SESSION['menu']=='producto/stock' /* or $_SESSION['menu']=='lista-descuento'  */or $_SESSION['menu']=='producto/agregar' OR $_SESSION['menu']=='producto/detalle' ) echo 'class="active open"'; ?>>
-                <a href="javascript:;">
-                <i class="fa fa-cubes"></i>
-                <span class="title">Productos</span>
-                <span class="arrow <?php if($_SESSION['menu']=='producto/lista' or $_SESSION['menu']=='producto/stock' or $_SESSION['menu']=='producto/agregar' or $_SESSION['menu']=='lista-guia') echo 'open'; ?>"></span>
-                <span <?php if($_SESSION['menu']=='lista-producto' or $_SESSION['menu']=='stock-producto' or $_SESSION['menu']=='lista-descuento' or $_SESSION['menu']=='lista-guia') echo 'class="selected"'; ?>></span>
+			<li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
+                <a href="categoria/lista/">
+                <i class="fa fa-user"></i>
+                <span class="title">Usuarios</span>
+                <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
                 </a>
-                <ul class="sub-menu <?php if($_SESSION['menu']=='lista-producto' or $_SESSION['menu']=='stock-producto' or $_SESSION['menu']=='lista-descuento' or $_SESSION['menu']=='lista-guia') echo 'open'; ?>" <?php if($_SESSION['menu']=='lista-producto' or $_SESSION['menu']=='stock-producto' or $_SESSION['menu']=='lista-descuento' or $_SESSION['menu']=='lista-guia') echo 'style="display:block; "'; ?>>
-                    <li <?php if($_SESSION['menu']=='producto/lista' OR $_SESSION['menu']=='producto/agregar' OR $_SESSION['menu']=='producto/detalle') echo 'class="active"'; ?>>
-                        <a href="producto/lista/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Productos</a>
-                    </li>
-                    <li <?php if($_SESSION['menu']=='producto/stock') echo 'class="active"'; ?>>
-                        <a href="producto/stock/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Stock</a>
-                    </li>
-                    <li <?php if($_SESSION['menu']=='lista-guia') echo 'class="active"'; ?>>
-                        <a href="guia/lista/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Guia de despacho</a>
-                    </li>
-				</ul>
-            </li>         
-			<li  <?php if($_SESSION['menu']=='lista-proveedor') echo 'class="active"'; ?>>
-                <a href="proveedor/lista/">
-                <i class="fa fa-truck"></i>
-                <span class="title">Proveedores</span>
-                <span <?php if($_SESSION['menu']=='lista-proveedor') echo 'class="selected"'; ?>></span>
+            </li>	
+            <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
+                <a href="categoria/lista/">
+                <i class="fa fa-cog"></i>
+                <span class="title">Herramientas</span>
+                <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
-            <!--
-			<li  <?php if($_SESSION['menu']=='lista-proveedor') echo 'class="active open"'; ?>>
-                <a href="javascript:;">
-                <i class="fa fa-truck"></i>
-                <span class="title">Proveedores</span>
-                <span class="arrow <?php if($_SESSION['menu']=='lista-proveedor') echo 'open'; ?>"></span>
-                <span <?php if($_SESSION['menu']=='lista-proveedor') echo 'class="selected"'; ?>></span>
-                </a>
-                <ul class="sub-menu <?php if($_SESSION['menu']=='lista-proveedor') echo 'open'; ?>" <?php if($_SESSION['menu']=='lista-proveedor') echo 'style="display:block; "'; ?>>
-                    <li <?php if($_SESSION['menu']=='lista-proveedor') echo 'class="active"'; ?>>
-                        <a href="lista-proveedor/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Proveedores</a>
-                    </li>
-				</ul>
-            </li>
-            -->
-            
-            <li  <?php if($_SESSION['menu']=='lista-cliente' or $_SESSION['menu']=='lista-cliente-usuario') echo 'class="active open"'; ?>>
-                <a href="javascript:;">
-                <i class="fa fa-users"></i>
-                <span class="title">Clientes</span>
-                <span class="arrow <?php if($_SESSION['menu']=='lista-cliente' or $_SESSION['menu']=='lista-cliente-usuario') echo 'open'; ?>"></span>
-                <span <?php if($_SESSION['menu']=='lista-cliente' or $_SESSION['menu']=='lista-cliente-usuario') echo 'class="selected"'; ?>></span>
-                </a>
-                <ul class="sub-menu <?php if($_SESSION['menu']=='lista-cliente' or $_SESSION['menu']=='lista-cliente-usuario') echo 'open'; ?>" <?php if($_SESSION['menu']=='lista-cliente' or $_SESSION['menu']=='lista-cliente-usuario') echo 'style="display:block; "'; ?>>
-                    
-                  <!--  <li <?php if($_SESSION['menu']=='lista-cliente') echo 'class="active"'; ?>>
-                        <a href="cliente/lista-mayorista/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Mayoristas</a>
-                    </li>-->
-                    <li <?php if($_SESSION['menu']=='lista-cliente-usuario') echo 'class="active"'; ?>>
-                        <a href="cliente/lista-cliente-usuario/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Usuarios</a>
-                 <!--   </li>
-                     <li <?php if($_SESSION['menu']=='lista-perfil') echo 'class="active"'; ?>>
-                        <a href="lista-perfil/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Perfiles</a>
-                   -->
-                    </li>
-				</ul>
-            </li>
-            
-            <li  <?php if($_SESSION['menu']=='lista-pedido' or $_SESSION['menu']=='lista-envio') echo 'class="active open"'; ?>>
-                <a href="javascript:;">
-                <i class="fa fa-file-o"></i>
-                <span class="title">Pedidos</span>
-                <span class="arrow <?php if($_SESSION['menu']=='lista-pedido' or $_SESSION['menu']=='lista-envio') echo 'open'; ?>"></span>
-                <span <?php if($_SESSION['menu']=='lista-pedido' or $_SESSION['menu']=='lista-envio') echo 'class="selected"'; ?>></span>
-                </a>
-                <ul class="sub-menu <?php if($_SESSION['menu']=='lista-pedido' OR $_SESSION['menu']=='lista-pedidos' or $_SESSION['menu']=='lista-envio') echo 'open'; ?>" <?php if($_SESSION['menu']=='lista-pedido' OR $_SESSION['menu']=='lista-pedidos' or $_SESSION['menu']=='lista-envio') echo 'style="display:block; "'; ?>>
-                    <li <?php if($_SESSION['menu']=='lista-pedidos') echo 'class="active"'; ?>>
-                        <a href="pedido/estado/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Lista Pedidos</a>
-                    </li>
-                    <li <?php if($_SESSION['menu']=='lista-pedido') echo 'class="active"'; ?>>
-                        <a href="pedido/lista/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Pedidos</a>
-                    </li>
-                    <li <?php if($_SESSION['menu']=='lista-envio') echo 'class="active"'; ?>>
-                        <a href="pedido/envio/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Envios</a>
-                    </li>
-				</ul>
-            </li>
-
-            <li  <?php if($_SESSION['menu']=='lista-venta') echo 'class="active open"'; ?>>
-                <a href="javascript:;">
-                <i class="fa fa-shopping-cart"></i>
-                <span class="title">POS</span>
-                <span class="arrow <?php if($_SESSION['menu']=='lista-venta') echo 'open'; ?>"></span>
-                <span <?php if($_SESSION['menu']=='lista-venta') echo 'class="selected"'; ?>></span>
-                </a>
-                <ul class="sub-menu <?php if($_SESSION['menu']=='lista-venta') echo 'open'; ?>" <?php if($_SESSION['menu']=='lista-venta') echo 'style="display:block; "'; ?>>
-                    <li <?php if($_SESSION['menu']=='lista-venta') echo 'class="active"'; ?>>
-                        <a href="pos/venta/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Ventas</a>
-                    </li>
-				</ul>
-            </li>
-            
-            <li  <?php if($_SESSION['menu']=='reporte-ventas') echo 'class="active open"'; ?>>
-                <a href="javascript:;">
-                <i class="fa fa-bar-chart-o"></i>
-                <span class="title">Reportes</span>
-                <span class="arrow <?php if($_SESSION['menu']=='reporte-ventas') echo 'open'; ?>"></span>
-                <span <?php if($_SESSION['menu']=='reporte-ventas') echo 'class="selected"'; ?>></span>
-                </a>
-                <ul class="sub-menu <?php if($_SESSION['menu']=='reporte-ventas') echo 'open'; ?>" <?php if($_SESSION['menu']=='reporte-ventas') echo 'style="display:block; "'; ?>>
-                    <li <?php if($_SESSION['menu']=='reporte-ventas') echo 'class="active"'; ?>>
-                        <a href="reporte-ventas/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Ventas</a>
-                    </li>
-				</ul>
-            </li>
-
-            <li  <?php if($_SESSION['menu']=='lista-impuesto' or $_SESSION['menu']=='lista-plataforma') echo 'class="active open"'; ?>>
-                <a href="javascript:;">
-                <i class="fa fa-cogs"></i>
-                <span class="title">Ajustes</span>
-                <span class="arrow <?php if($_SESSION['menu']=='lista-impuesto' or $_SESSION['menu']=='lista-plataforma') echo 'open'; ?>"></span>
-                <span <?php if($_SESSION['menu']=='lista-impuesto' or $_SESSION['menu']=='lista-plataforma') echo 'class="selected"'; ?>></span>
-                </a>
-                <ul class="sub-menu <?php if($_SESSION['menu']=='lista-impuesto' or $_SESSION['menu']=='lista-plataforma') echo 'open'; ?>" <?php if($_SESSION['menu']=='lista-impuesto' or $_SESSION['menu']=='lista-plataforma') echo 'style="display:block; "'; ?>>
-                    
-                    <li <?php if($_SESSION['menu']=='lista-impuesto') echo 'class="active"'; ?>>
-                        <a href="lista-impuesto/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Impuestos</a>
-                    </li>
-                    <li <?php if($_SESSION['menu']=='lista-plataforma') echo 'class="active"'; ?>>
-                        <a href="lista-plataforma/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Plataformas</a>
-                    </li>
-				</ul>
-            </li>
-
-
         </ul>                        
         <!-- END SIDEBAR MENU -->
     </div>

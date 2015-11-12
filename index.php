@@ -80,26 +80,12 @@
 	$loader = new Loader($registry);
 	
 	$registry->set('load', $loader);
-	//OpenCart Conexión
-	include_once("system/database/db_class_opencart.php");
-	
-	$opencart_db = new ConectarOpencart();
-	
-	$registry->set('db_opencart', $opencart_db);
 	//CSS
 	include_once("system/library/css.php");
 	
 	$Css = new Css();
 	
 	$registry->set('css', $Css);
-
-	//OpenCart
-	
-	include_once("system/library/opencart.php");
-	
-	$opencart = new Opencart($registry);
-	
-	$registry->set('opencart', $opencart);
 
 	//DataBase
 	

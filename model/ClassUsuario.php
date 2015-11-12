@@ -10,13 +10,12 @@ class ClassUsuario extends Model {
 	     0	=> "id_usuario",
 	     1  => "nombre_usuario",
 	     2	=> "apellido_usuario",
-	     3	=> "mail",
+	     3	=> "email_usuario",
 	     4  => "foto_usuario",
 	     5  => "perfil_id_perfil",
-			 6 	=> "sucursal_id_sucursal",	 
 	     );
 	     
-	    $auth = $this->auth($user,$pass,'usuario','mail_usuario','pass_usuario','ver_usuario',1,'sha1',2,$session_colum);
+	    $auth = $this->auth($user,$pass,'usuario','email_usuario','password_usuario','activo_usuario',1,'sha1',2,$session_colum);
 	     
 		 
 		return $auth;

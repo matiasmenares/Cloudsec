@@ -1,6 +1,6 @@
 <?php
 /* <CONFIGURACIÓN> */	
-define('TITULO', 'Apptec');
+define('TITULO', 'CloudSec');
 
 define('URL_FRONTEND', 'http://localhost/cloudsec/');	
 define('TEMPLATE', 'view/apptec/');	
@@ -36,6 +36,7 @@ define('ERROR_CONEXION_BD', 'conexion/');
 
 
 /* ADMIN */
+define('ADMIN_REPORT', "");
 
 /*
 

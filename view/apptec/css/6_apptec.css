@@ -1,7 +1,7 @@
 
 html, body{
 	-webkit-font-smoothing: antialiased;
-	background-color:#2C343E;
+	background-color:#21282e;
 }
 a {
 	text-shadow: none;
@@ -108,7 +108,7 @@ a:hover {
 	border: 2px solid rgba(168, 168, 168, 0.2);
 }
 .page-header.navbar{
-	background-color:#297DF1;
+	background-color:#2b3643;
 	border-bottom: 1px solid #333;
 	height: 55px;
 }

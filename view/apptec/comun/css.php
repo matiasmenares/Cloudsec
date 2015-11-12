@@ -1,5 +1,6 @@
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
-
+<link href="<?php echo URL_VIEW; ?>plugins/switch-source/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="<?php echo URL_VIEW; ?>plugins/switch-source/css/base.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo URL_VIEW; ?>css/font.css" rel="stylesheet" type="text/css" id="style_color"/>
 <link href="<?php echo URL_VIEW; ?>plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo URL_VIEW; ?>plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
@@ -9,6 +10,7 @@
 <link href="<?php echo URL_VIEW; ?>plugins/select2/select2.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo URL_VIEW; ?>plugins/icheck/skins/all.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo URL_VIEW; ?>plugins/autocomplete/content/styles.css" rel="stylesheet" type="text/css"/>
+
 
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->

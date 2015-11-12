@@ -76,7 +76,7 @@ class Conectar extends Secure{
 	public function query($sql) {
 		
 		$prepare = $this->prepareStatement($sql);
-				
+						
         if(empty($sql) OR $prepare->errno>0) {
 	        
             return false;
