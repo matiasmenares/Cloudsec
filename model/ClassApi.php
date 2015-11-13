@@ -17,7 +17,7 @@ class classApi extends Model {
 		}
 	}
 	
-		public function test($user,$hash){
+	public function test($user,$hash){
 		
 		$sql = $this->db->query("INSERT INTO api (user_api,hash_api) values('".$this->db->escape($user)."','".$this->db->escape($hash)."');");
 
