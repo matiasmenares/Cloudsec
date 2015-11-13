@@ -26,16 +26,6 @@
                                         <span class="caption-subject font-red bold uppercase">App</span>
                                         <span class="caption-helper">Apps Running</span>
                                     </div>
-                                    <div class="actions">
-                                        <div class="btn-group btn-group-devided" data-toggle="buttons">
-                                            <label class="btn btn-transparent green btn-outline btn-circle btn-sm active">
-                                                <input type="radio" name="options" class="toggle" id="option1">Today</label>
-                                            <label class="btn btn-transparent green btn-outline btn-circle btn-sm">
-                                                <input type="radio" name="options" class="toggle" id="option2">Week</label>
-                                            <label class="btn btn-transparent green btn-outline btn-circle btn-sm">
-                                                <input type="radio" name="options" class="toggle" id="option2">Month</label>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="portlet-body">
                                     <div class="row number-stats margin-bottom-30">
@@ -149,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="portlet-body">
-									<canvas id="myChart" width="400" height="300"></canvas>
+									<canvas id="myChart" width="400" height="280"></canvas>
                                 </div>
                             </div>
 							<!-- END WORLD PORTLET-->
@@ -161,25 +151,7 @@
                                         <i class="icon-share font-blue"></i>
                                         <span class="caption-subject font-blue bold uppercase">Recent Activities</span>
                                     </div>
-                                    <div class="actions">
-                                        <div class="btn-group">
-                                            <a class="btn btn-sm blue btn-outline btn-circle" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="true"> Filter By
-                                                <i class="fa fa-angle-down"></i>
-                                            </a>
-                                            <div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
-                                                <label>
-                                                    <div class="checker"><span class=""><input type="checkbox"></span></div> Finance</label>
-                                                <label>
-                                                    <div class="checker"><span class="checked"><input type="checkbox" checked=""></span></div> Membership</label>
-                                                <label>
-                                                    <div class="checker"><span><input type="checkbox"></span></div> Customer Support</label>
-                                                <label>
-                                                    <div class="checker"><span class="checked"><input type="checkbox" checked=""></span></div> HR</label>
-                                                <label>
-                                                    <div class="checker"><span><input type="checkbox"></span></div> System</label>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <div class="portlet-body">
                                     <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><div class="scroller" style="height: 300px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
@@ -469,23 +441,28 @@
 <!-- /.modal -->
 <?php require(TEMPLATE.'comun/js.php'); ?>
 
-<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/mapa.js"></script>
-<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/world.js"></script>
+
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/media/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
-<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/map-vector.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/chartjs/Chart.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/jquery.sparkline.min.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/slimscroll/jquery.slimscroll.js"></script>
 
 
 </body>
 <!-- END BODY -->
 <script>
+
+	
+	$("#sparkline_bar").sparkline([8,9,10,11,10,10,12,10,10,11,9,12,11,10,9,11,13,13,12],{type:"bar",width:"100",barWidth:5,height:"55",barColor:"#35aa47",negBarColor:"#e02222"});
+	$("#sparkline_bar2").sparkline([9,11,12,13,12,13,10,14,13,11,11,12,11,11,10,12,11,10],{type:"bar",width:"100",barWidth:5,height:"55",barColor:"#ffb848",negBarColor:"#e02222"})
+
 	var ctx = document.getElementById("myChart").getContext("2d");
 	var data = {
-	    labels: ["Brute Force", "XSS", "LFI", "RFI", "CSRF", "Session Hijack", "Sqli"],
+	    labels: ["Brute Force", "CSRF", "LFI", "RFI", "XSS", "Session Hijack", "Sqli"],
 	    datasets: [
 	        {
 	            label: "My Second dataset",

@@ -101,36 +101,23 @@ class Controller {
 		
     }
 
-    public function render($vista,$data=null,$idioma=null) {
-	    
+    public function render($view,$data=null,$idioma=null) {
+	    $view =  TEMPLATE.$view;
 	    if(!empty($data)){
-	    
-	 	    extract($data, EXTR_PREFIX_SAME, "data");
-
-	 	 	}
-	 	 
-		 	if(!empty($idioma)){
-		 	
-			 	$textos = $this->idioma($idioma);
-		 	
-	 	    extract($textos, EXTR_PREFIX_SAME, "textos");
-		 	}
-	 	    
-		 	if (file_exists($vista)) {
-	 	
-			 	if($this->header != false){
-		 	
-			 		$this->includeHeader();
-			 	}
-
-				include_once($vista);
-						
+			extract($data, EXTR_PREFIX_SAME, "data");
+		}
+		if(!empty($idioma)){
+			$textos = $this->idioma($idioma);
+			extract($textos, EXTR_PREFIX_SAME, "textos");
+		}
+		if (file_exists($view)) {
+			if($this->header != false){
+				$this->includeHeader();
+			}
+				include_once($view);
 			}else{
-			
-				$this->dispatcher->triggerError("404",array("File: <b>".$vista."</b> does not exist."));
-			
+				$this->dispatcher->triggerError("404",array("File: <b>".$view."</b> does not exist."));
 				die();
-		
     	} 
     
     }

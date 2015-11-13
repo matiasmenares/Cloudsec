@@ -14,7 +14,7 @@
 			$output = null;
 		}	
 		
-		$this->render(TEMPLATE."error/404.php",$output);
+		$this->render("error/404.php",$output);
 
 	}
 

@@ -29,6 +29,13 @@
                 <span <?php if($_SESSION['menu']=='home') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
+            <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
+                <a href="app/list/">
+                <i class="fa fa-rocket"></i>
+                <span class="title">Apps</span>
+                <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
+                </a>
+            </li>
             <li  <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="active"'; ?>>
                 <a href="sucursal/lista/">
                 <i class="fa fa-bug"></i>
@@ -47,13 +54,6 @@
                 <a href="categoria/lista/">
                 <i class="fa fa-search"></i>
                 <span class="title">Scanner</span>
-                <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
-                </a>
-            </li>
-            <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
-                <a href="categoria/lista/">
-                <i class="fa fa-rocket"></i>
-                <span class="title">Apps</span>
                 <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
                 </a>
             </li>

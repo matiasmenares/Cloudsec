@@ -36,12 +36,8 @@
 				}
 		}
 		
-					$output['null'] = null;
 
-			
-			$vista = TEMPLATE."{$_SESSION['menu']}.php";
-
-		$this->render($vista,$output);
+		$this->render("login.php");
 
 	}
 	
