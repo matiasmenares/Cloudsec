@@ -72,6 +72,9 @@
 										<th>
 											IP
 										</th>
+										<th>
+											Estado
+										</th>
 										<th width="50px">
 											Accion
 										</th>
@@ -116,6 +119,17 @@ $(document).ready(function() {
             { "data": 1 },
 	        { "data": 2 },
             { "data": 3 },
+			{ 
+            	"class":          "details-control",
+                "orderable":      false,
+                "data":           0,
+                "defaultContent": "",
+                "render": function (data)
+                {
+					return 'Running';
+				} 
+			},
+
 			{
             	"class":          "details-control",
                 "orderable":      false,

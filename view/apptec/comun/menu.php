@@ -39,7 +39,7 @@
             <li  <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="active"'; ?>>
                 <a href="sucursal/lista/">
                 <i class="fa fa-bug"></i>
-                <span class="title">Vulnerabilidades</span>
+                <span class="title">Bug</span>
                 <span <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
