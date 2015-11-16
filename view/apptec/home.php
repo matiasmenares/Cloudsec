@@ -4,6 +4,10 @@
 <?php require(TEMPLATE.'comun/header.php'); ?>
 <?php require(TEMPLATE.'comun/menu.php'); ?>
 <script src="<?php echo TEMPLATE; ?>plugins/chartjs/Chart.js"></script>
+<script src="<?php echo TEMPLATE; ?>js/chartdiv.js"></script>
+<script src="http://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="http://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="http://www.amcharts.com/lib/3/themes/none.js"></script>
 <div class="page-content-wrapper">
     <div class="page-content">
         <div class="page-bar sombra">
@@ -48,7 +52,7 @@
                                                     <div id="sparkline_bar2"><canvas width="107" height="55" style="display: inline-block; width: 107px; height: 55px; vertical-align: top;"></canvas></div>
                                                 </div>
                                                 <div class="stat-number">
-                                                    <div class="title"> New </div>
+                                                    <div class="title"> Nuevo </div>
                                                     <div class="number"> 719 </div>
                                                 </div>
                                             </div>
@@ -58,11 +62,11 @@
                                         <table class="table table-hover table-light">
                                             <thead>
                                                 <tr class="uppercase">
-                                                    <th colspan="2"> Apps </th>
-                                                    <th> Server </th>
+                                                    <th colspan="2"> Aplicaciones </th>
+                                                    <th> Servidor </th>
                                                     <th> IP </th>
-                                                    <th> Status </th>
-                                                    <th> RATE </th>
+                                                    <th> Estado </th>
+                                                    <th> Tasa </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -396,6 +400,17 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6 col-sm-6">
+                                       <div class="portlet light bordered">
+                                           <div class="portlet-title">
+                                               <div class="caption">
+                                                 <div id="chartdiv"></div>
+                                               </div>
+                                             </div>
+                                           </div>
+                                         </div>
+
+
 		</div>
 
 	</div>
@@ -421,7 +436,9 @@
 
 </body>
 <!-- END BODY -->
+
 <script>
+
 
 
 	$("#sparkline_bar").sparkline([8,9,10,11,10,10,12,10,10,11,9,12,11,10,9,11,13,13,12],{type:"bar",width:"100",barWidth:5,height:"55",barColor:"#35aa47",negBarColor:"#e02222"});
