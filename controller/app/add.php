@@ -14,6 +14,7 @@
 		$output['db'] = $app->getDb();
 		$output['back'] = $app->getBack();
 		$output['front'] = $app->getFront();
+		$output['webserver'] = $app->getWeb();
 
 		$this->render("app/add.php",$output);
 

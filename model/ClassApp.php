@@ -24,6 +24,12 @@ class ClassApp extends Model {
 		$this->db->query("SELECT * FROM code_backend;");
 		return $this->db->rows();
 	}
+	
+	public function getWeb(){
+		$this->db->query("SELECT * FROM webserver;");
+		return $this->db->rows();
+	}
+
 }
 	
 ?>
