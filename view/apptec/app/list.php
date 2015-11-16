@@ -118,7 +118,6 @@ $(document).ready(function() {
             { "data": 0 },
             { "data": 1 },
 	        { "data": 2 },
-            { "data": 3 },
 			{ 
             	"class":          "details-control",
                 "orderable":      false,

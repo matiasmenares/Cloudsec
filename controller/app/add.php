@@ -8,6 +8,7 @@
 		$app = $this->load->model('App');
 
 		if(!empty($this->request->post)){
+			$save = $app->save($this->request->post);
 		}
 		
 		$output['host'] = $app->getHost();

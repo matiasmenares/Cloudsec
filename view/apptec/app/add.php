@@ -198,7 +198,7 @@
 		                        <div class="form-group">
 		                            <label class="control-label col-md-3">Detalle</label>
 		                            <div class="col-md-4">
-		                                <textarea class="form-control" rows="3" name="remarks"></textarea>
+		                                <textarea class="form-control" rows="3" name="detalle"></textarea>
 		                            </div>
 		                        </div>
 		                    </div>
@@ -231,7 +231,7 @@
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
-									<select name="country" id="db" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+									<select name="database" id="db" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
 										<?php foreach($db as $key => $value){ ?>
 		                                <option value="<?php echo $value['id_database']; ?>"><?php echo $value['nombre_database']; ?></option>
 		                                <?php } ?>

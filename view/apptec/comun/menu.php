@@ -29,12 +29,26 @@
                 <span <?php if($_SESSION['menu']=='home') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
-            <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
-                <a href="app/list/">
+           <li  <?php if($_SESSION['menu']=='lista-orden' or $_SESSION['menu']=='lista-distribuir-orden') echo 'class="active open"'; ?>>
+                <a href="javascript:;">
                 <i class="fa fa-rocket"></i>
                 <span class="title">Apps</span>
-                <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
+                <span class="arrow <?php if($_SESSION['menu']=='lista-orden' or $_SESSION['menu']=='lista-distribuir-orden') echo 'open'; ?>"></span>
+                <span <?php if($_SESSION['menu']=='lista-orden' or $_SESSION['menu']=='lista-distribuir-orden') echo 'class="selected"'; ?>></span>
                 </a>
+                <ul class="sub-menu <?php if($_SESSION['menu']=='lista-orden' OR $_SESSION['menu']=='lista-compra' or $_SESSION['menu']=='lista-distribuir-orden') echo 'open'; ?>" <?php if($_SESSION['menu']=='lista-orden' or $_SESSION['menu']=='lista-distribuir-orden' OR $_SESSION['menu']=='lista-compra') echo 'style="display:block; "'; ?>>
+	                <li <?php if($_SESSION['menu']=='lista-compra') echo 'class="active"'; ?>>
+						<a href="app/list/">
+                        	<i class="fa fa-angle-double-right"></i>
+							Apps
+						</a>
+                    </li>
+	                <li <?php if($_SESSION['menu']=='agregar-compra') echo 'class="active"'; ?>>
+                        <a href="orden/directa/">
+                        <i class="fa fa-angle-double-right"></i>
+                        Reportes</a>
+                    </li>
+				</ul>
             </li>
             <li  <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="active"'; ?>>
                 <a href="sucursal/lista/">

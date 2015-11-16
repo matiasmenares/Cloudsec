@@ -65,54 +65,21 @@
                                                     <th> RATE </th>
                                                 </tr>
                                             </thead>
-                                            <tbody><tr>
+                                            <tbody>
+                                            <?php foreach($app as $key => $value){ ?>
+											<tr>
                                                 <td class="fit">
                                                 <td>
-                                                    <a href="javascript:;" class="primary-link">Banco Chile</a>
+                                                    <a href="javascript:;" class="primary-link"><?php echo $value['nombre_aplicacion']; ?></a>
                                                 </td>
-                                                <td> Amazon AWS </td>
-                                                <td> 52.70.30.2 </td>
-                                                <td> Fine </td>
-                                                <td>
-                                                    <span class="bold theme-font">80%</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="fit">
-                                                <td>
-                                                    <a href="javascript:;" class="primary-link">Falabella</a>
-                                                </td>
-                                                <td> Heroku </td>
-                                                <td> 10.40.22.1 </td>
-                                                <td> Fine </td>
-                                                <td>
-                                                    <span class="bold theme-font">67%</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="fit">
-                                                <td>
-                                                    <a href="javascript:;" class="primary-link">Sonda</a>
-                                                </td>
-                                                <td> Digital Ocean </td>
-                                                <td> 50.2.101.24 </td>
+                                                <td> <?php  echo $value['nombre_host']; ?> </td>
+                                                <td> <?php  echo $value['ip_aplicacion'];?></td>
                                                 <td> Fine </td>
                                                 <td>
                                                     <span class="bold theme-font">98%</span>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td class="fit">
-                                                <td>
-                                                    <a href="javascript:;" class="primary-link">Woocomerce</a>
-                                                </td>
-                                                <td> BlueHost </td>
-                                                <td> 10.33.20.1 </td>
-                                                <td> Fine </td>
-                                                <td>
-                                                    <span class="bold theme-font">58%</span>
-                                                </td>
-                                            </tr>
+                                            <?php } ?>
                                         </tbody></table>
                                     </div>
                                 </div>
@@ -462,7 +429,7 @@
 
 	var ctx = document.getElementById("myChart").getContext("2d");
 	var data = {
-	    labels: ["Brute Force", "CSRF", "LFI", "RFI", "XSS", "Session Hijack", "Sqli"],
+	    labels: ["Brute Force", "CSRF", "LFI", "RFI", "XSS", "DDOS", "SQLi"],
 	    datasets: [
 	        {
 	            label: "My Second dataset",

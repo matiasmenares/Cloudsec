@@ -3,8 +3,12 @@
  class Home extends Controller {		
 
 	public function index() {
-	
-		$this->render("home.php");
+
+		$app = $this->load->model('App');
+		
+		$output['app'] = $app->getApps();
+		
+		$this->render("home.php",$output);
 
 	}			
 	
