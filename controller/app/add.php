@@ -4,8 +4,18 @@
 	
 		
 	public function index() {
+	
+		$app = $this->load->model('App');
+
+		if(!empty($this->request->post)){
+		}
 		
-		$this->render("app/add.php");
+		$output['host'] = $app->getHost();
+		$output['db'] = $app->getDb();
+		$output['back'] = $app->getBack();
+		$output['front'] = $app->getFront();
+
+		$this->render("app/add.php",$output);
 
 	}
 	

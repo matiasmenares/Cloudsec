@@ -178,9 +178,9 @@
 		                            <div class="col-md-4">
 									<select name="leng_front" id="front_end_lang" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
 		                                    <option value="">Ninguno</option>
-		                                    <option value="1">AngularJS</option>
-											<option value="1">JavaScript</option>
-											<option value="1">Jquery</option>
+										<?php foreach($front as $key => $value){ ?>
+		                                <option value="<?php echo $value['id_code_frontend']; ?>"><?php echo $value['nombre_code_frontend']; ?></option>
+		                                <?php } ?>
 		                            </select>
 										<span class="help-block">Lenguaje de Frontend</span>
 		                            </div>
@@ -189,12 +189,9 @@
 		                            <label class="control-label col-md-3">Lenguaje Backend</label>
 		                            <div class="col-md-4">
 		                                <select name="leng_back" id="country_list" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-		                                    <option value="">Lenguaje</option>
-		                                    <option value="1">Ruby</option>
-											<option value="1">NodeJS</option>
-		                                    <option value="1">PHP</option>
-		                                    <option value="1">Java</option>
-		                                    <option value="1">Python</option>
+										<?php foreach($back as $key => $value){ ?>
+		                                <option value="<?php echo $value['id_code_backend']; ?>"><?php echo $value['nombre_code_backend']; ?></option>
+		                                <?php } ?>
 		                                </select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-country_list-container"><span class="select2-selection__rendered" id="select2-country_list-container"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
 		                            </div>
 		                        </div>
@@ -213,12 +210,9 @@
 		                            </label>
 		                            <div class="col-md-4">
 									<select name="host" id="hosting" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-		                                    <option value="">Ninguno</option>
-		                                    <option value="1">Amazon AWS</option>
-											<option value="1">Heroku</option>
-											<option value="1">BlueHost</option>
-											<option value="1">Digital Ocean</option>
-											<option value="1">Otro</option>
+		                                <?php foreach($host as $key => $value){ ?>
+		                                <option value="<?php echo $value['id_host']; ?>"><?php echo $value['nombre_host']; ?></option>
+		                                <?php } ?>
 		                            </select>
 		                            <span class="help-block"> </span>
 		                            </div>
@@ -238,12 +232,9 @@
 		                            </label>
 		                            <div class="col-md-4">
 									<select name="country" id="db" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-		                                    <option value="">Base de datos</option>
-		                                    <option value="1">MySql</option>
-											<option value="1">PosgreSql</option>
-											<option value="1">MariaDB</option>
-											<option value="1">MongoDB</option>
-											<option value="1">Oracle</option>
+										<?php foreach($db as $key => $value){ ?>
+		                                <option value="<?php echo $value['id_database']; ?>"><?php echo $value['nombre_database']; ?></option>
+		                                <?php } ?>
 		                            </select>
 		                            <span class="help-block"> </span>
 		                            </div>
@@ -254,10 +245,9 @@
 		                            </label>
 		                            <div class="col-md-4">
 									<select name="web-server" id="webserver" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-		                                    <option value="">Web Server</option>
-		                                    <option value="1">Apache</option>
-											<option value="1">Ngix</option>
-											<option value="1">GrassFish</option>
+										<?php foreach($webserver as $key => $value){ ?>
+		                                <option value="<?php echo $value['id_database']; ?>"><?php echo $value['nombre_nombre']; ?></option>
+		                                <?php } ?>
 		                            </select>
 		                            </div>
 		                        </div>
