@@ -26,9 +26,14 @@
 
 		if(!empty($this->request->post)){
 			$save = $app->save($this->request->post);
-		}
-		$output['response'] = 'true';
-		
+			if($save){
+				$output['response'] = 'true';
+			}else{
+				$output['response'] = 'false';
+			}
+		}else{
+				$output['response'] = 'error';
+		}		
 		echo json_encode($output);		
 	}
 	
