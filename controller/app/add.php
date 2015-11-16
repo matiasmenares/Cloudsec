@@ -21,6 +21,17 @@
 
 	}
 	
+	public function save(){
+		$app = $this->load->model('App');
+
+		if(!empty($this->request->post)){
+			$save = $app->save($this->request->post);
+		}
+		$output['response'] = 'true';
+		
+		echo json_encode($output);		
+	}
+	
 }
 
 ?>

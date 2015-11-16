@@ -246,7 +246,7 @@
 		                            <div class="col-md-4">
 									<select name="web-server" id="webserver" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
 										<?php foreach($webserver as $key => $value){ ?>
-		                                <option value="<?php echo $value['id_wevserver']; ?>"><?php echo $value['nombre_webserver']; ?></option>
+		                                <option value="<?php echo $value['id_webserver']; ?>"><?php echo $value['nombre_webserver']; ?></option>
 		                                <?php } ?>
 		                            </select>
 		                            </div>

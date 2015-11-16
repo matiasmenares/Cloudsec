@@ -2,7 +2,7 @@
 class ClassApp extends Model {
 	
 	public function save($data){
-		$this->db->query("INSERT INTO aplicacion (nombre_aplicacion, ip_aplicacion, url_aplicacion, carpeta_aplicacion, detalle_aplicacion, database_id_database, host_id_host, webserver_id_webserver, code_backend_id_code_backend, code_frontend_id_code_frontend) VALUES ('".$this->db->escape($data['nombre'])."', '".$this->db->escape($data['ip'])."', '".$this->db->escape($data['url'])."', '".$this->db->escape($data['ruta'])."', '".$this->db->escape($data['detalle'])."','".$this->db->escape($data['database'])."', '".$this->db->escape($data['host'])."', '".$this->db->escape($data['web-server'])."', '".$this->db->escape($data['leng_back'])."', '".$this->db->escape($data['leng_front'])."');");
+		$this->db->query("INSERT INTO aplicacion (nombre_aplicacion, ip_aplicacion, url_aplicacion, carpeta_aplicacion, detalle_aplicacion, database_id_database, host_id_host, webserver_id_webserver, code_backend_id_code_backend, code_frontend_id_code_frontend) VALUES ('".$this->db->escape($data['nombre'])."', '".$this->db->escape($data['ip'])."', '".$this->db->escape($data['url'])."', '".$this->db->escape($data['ruta'])."', '".$this->db->escape($data['detalle'])."','".$this->db->escape($data['database'])."', '".$this->db->escape($data['host'])."', '".$this->db->escape($data['webserver'])."', '".$this->db->escape($data['back_end_lang'])."', '".$this->db->escape($data['front_end_lang'])."');");
 		$this->db->debug(2);
 		return $this->db->execute();
 	}
