@@ -77,7 +77,7 @@
 		    </div>
 		</div>
 		<div class="portlet-body form">
-		    <form action="#" class="form-horizontal" id="submit_form" method="POST" novalidate="novalidate">
+		    <form action="" class="form-horizontal" id="submit_form" method="POST" novalidate="novalidate">
 		        <div class="form-wizard">
 		            <div class="form-body">
 		                <ul class="nav nav-pills nav-justified steps">
@@ -117,7 +117,7 @@
 		                    <div class="alert alert-danger display-none">
 		                        <button class="close" data-dismiss="alert"></button> Tienes algunos errores en el formulario! </div>
 		                    <div class="alert alert-success display-none">
-		                        <button class="close" data-dismiss="alert"></button> Your form validation is successful! </div>
+		                        <button class="close" data-dismiss="alert"></button> Aplicación Guardad con éxito! </div>
 		                    <div class="tab-pane active" id="tab1">
 		                        <h3 class="block">Detalles de la aplicación</h3>
 		                        <div class="form-group">
@@ -176,7 +176,7 @@
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
-									<select name="country" id="front_end_lang" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+									<select name="leng_front" id="front_end_lang" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
 		                                    <option value="">Ninguno</option>
 		                                    <option value="1">AngularJS</option>
 											<option value="1">JavaScript</option>
@@ -188,7 +188,7 @@
 		                        <div class="form-group">
 		                            <label class="control-label col-md-3">Lenguaje Backend</label>
 		                            <div class="col-md-4">
-		                                <select name="backend" id="country_list" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+		                                <select name="leng_back" id="country_list" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
 		                                    <option value="">Lenguaje</option>
 		                                    <option value="1">Ruby</option>
 											<option value="1">NodeJS</option>
@@ -208,11 +208,11 @@
 		                    <div class="tab-pane" id="tab3">
 		                        <h3 class="block">Configuración de servidor</h3>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Hosting Holder Name
+		                            <label class="control-label col-md-3">Host
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
-									<select name="country" id="hosting" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+									<select name="host" id="hosting" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
 		                                    <option value="">Ninguno</option>
 		                                    <option value="1">Amazon AWS</option>
 											<option value="1">Heroku</option>
@@ -228,7 +228,7 @@
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
-		                                <input type="text" class="form-control" name="">
+		                                <input type="text" class="form-control" name="ip">
 		                                <span class="help-block"> </span>
 		                            </div>
 		                        </div>
@@ -253,7 +253,7 @@
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
-									<select name="country" id="webserver" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+									<select name="web-server" id="webserver" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
 		                                    <option value="">Web Server</option>
 		                                    <option value="1">Apache</option>
 											<option value="1">Ngix</option>
@@ -261,24 +261,10 @@
 		                            </select>
 		                            </div>
 		                        </div>
-		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Payment Options
-		                                <span class="required" aria-required="true"> * </span>
-		                            </label>
-		                            <div class="col-md-4">
-		                                <div class="checkbox-list">
-		                                    <label>
-		                                        <div class="checker"><span><input type="checkbox" name="payment[]" value="1" data-title="Auto-Pay with this Credit Card."></span></div> Auto-Pay with this Credit Card </label>
-		                                    <label>
-		                                        <div class="checker"><span><input type="checkbox" name="payment[]" value="2" data-title="Email me monthly billing."></span></div> Email me monthly billing </label>
-		                                </div>
-		                                <div id="form_payment_error"> </div>
-		                            </div>
-		                        </div>
 		                    </div>
 		                    <div class="tab-pane" id="tab4">
 		                        <h3 class="block">Confirmar datos</h3>
-		                        <h4 class="form-section">Account</h4>
+		                        <h4 class="form-section">Información Básica</h4>
 		                        <div class="form-group">
 		                            <label class="control-label col-md-3">Nombre:</label>
 		                            <div class="col-md-4">
@@ -311,64 +297,58 @@
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Phone:</label>
+		                            <label class="control-label col-md-3">Lenguaje Frontend:</label>
 		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="phone"> </p>
+		                                <p class="form-control-static" data-display="leng_front"> </p>
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Address:</label>
+		                            <label class="control-label col-md-3">Lenguaje Frontend:</label>
 		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="address"> </p>
+		                                <p class="form-control-static" data-display="leng_back"> </p>
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">City/Town:</label>
+		                            <label class="control-label col-md-3">Host:</label>
 		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="city"> </p>
+		                                <p class="form-control-static" data-display="host"> </p>
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Lenguaje Backend:</label>
+		                            <label class="control-label col-md-3">IP:</label>
 		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="backend"> </p>
+		                                <p class="form-control-static" data-display="ip"> </p>
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Remarks:</label>
+		                            <label class="control-label col-md-3">Web server:</label>
 		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="remarks"> </p>
+		                                <p class="form-control-static" data-display="web-server"> </p>
 		                            </div>
 		                        </div>
-		                        <h4 class="form-section">Billing</h4>
+		                        <h4 class="form-section">Cuenta</h4>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Card Holder Name:</label>
+		                            <label class="control-label col-md-3">SHA 256:</label>
 		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="card_name"> </p>
-		                            </div>
-		                        </div>
-		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Card Number:</label>
-		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="card_number"> </p>
+		                                <p class="form-control-static" data-display=""><?php echo hash('sha256','asdf');?></p>
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">CVC:</label>
+		                            <label class="control-label col-md-3">Usuario:</label>
 		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="card_cvc"> </p>
+		                                <p class="form-control-static" data-display="">admin@cloudsec.com</p>
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Expiration:</label>
+		                            <label class="control-label col-md-3">Cuentas restantes:</label>
 		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="card_expiry_date"> </p>
+		                                <p class="form-control-static" data-display="">4</p>
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Payment Options:</label>
+		                            <label class="control-label col-md-3">Tarjeta:</label>
 		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="payment[]"> </p>
+		                                <p class="form-control-static" data-display="card_expiry_date">****-****-0434</p>
 		                            </div>
 		                        </div>
 		                    </div>
@@ -382,8 +362,7 @@
 		                        <a href="javascript:;" class="btn btn-outline green button-next"> Continuar
 		                            <i class="fa fa-angle-right"></i>
 		                        </a>
-		                        <a href="javascript:;" class="btn green button-submit" style="display: none;"> Confirmar
-		                            <i class="fa fa-check"></i>
+		                        <button type="submit" class="btn green button-submit"><i class="fa fa-check"></i>Confirmar</button>
 		                        </a>
 		                    </div>
 		                </div>
