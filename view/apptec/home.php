@@ -14,7 +14,7 @@
 	                    Home
 	                </a>
                 </li>
-                
+
 	        </ul>
         </div>
 		<div class="row">
@@ -23,8 +23,8 @@
                                 <div class="portlet-title">
                                     <div class="caption caption-md">
                                         <i class="fa fa-rocket font-red"></i>
-                                        <span class="caption-subject font-red bold uppercase">App</span>
-                                        <span class="caption-helper">Apps Running</span>
+                                        <span class="caption-subject font-red bold uppercase">Aplicación</span>
+                                        <span class="caption-helper">Aplicaciones Corriendo</span>
                                     </div>
                                 </div>
                                 <div class="portlet-body">
@@ -91,7 +91,7 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="fa fa-bug font-green"></i>
-                                        <span class="caption-subject font-green bold uppercase">Attack Method</span>
+                                        <span class="caption-subject font-green bold uppercase">Metodos de Ataque</span>
                                     </div>
                                     <div class="actions">
                                         <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -116,7 +116,7 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-share font-blue"></i>
-                                        <span class="caption-subject font-blue bold uppercase">Recent Activities</span>
+                                        <span class="caption-subject font-blue bold uppercase">Actividades Recientes</span>
                                     </div>
 
                                 </div>
@@ -397,12 +397,12 @@
                             </div>
                         </div>
 		</div>
-		
+
 	</div>
 </body>
 
 
-  
+
 
 <?php require(TEMPLATE.'comun/footer.php'); ?>
 <!-- /.modal -->
@@ -423,7 +423,7 @@
 <!-- END BODY -->
 <script>
 
-	
+
 	$("#sparkline_bar").sparkline([8,9,10,11,10,10,12,10,10,11,9,12,11,10,9,11,13,13,12],{type:"bar",width:"100",barWidth:5,height:"55",barColor:"#35aa47",negBarColor:"#e02222"});
 	$("#sparkline_bar2").sparkline([9,11,12,13,12,13,10,14,13,11,11,12,11,11,10,12,11,10],{type:"bar",width:"100",barWidth:5,height:"55",barColor:"#ffb848",negBarColor:"#e02222"})
 
@@ -444,6 +444,6 @@
 	    ]
 	};
 	var myRadarChart = new Chart(ctx).Radar(data);
-	
+
 </script>
 </html>

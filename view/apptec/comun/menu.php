@@ -18,7 +18,7 @@
                     <a href="javascript:;" class="remove">
                     <i class="icon-close"></i>
                     </a>
-     
+
                 </form>
                 <!-- END RESPONSIVE QUICK SEARCH FORM -->
             </li>
@@ -67,7 +67,7 @@
             <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
                 <a href="categoria/lista/">
                 <i class="fa fa-search"></i>
-                <span class="title">Scanner</span>
+                <span class="title">Escaner</span>
                 <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
@@ -108,7 +108,7 @@
                 <span class="title">Usuarios</span>
                 <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
                 </a>
-            </li>	
+            </li>
             <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
                 <a href="categoria/lista/">
                 <i class="fa fa-cog"></i>
@@ -116,7 +116,7 @@
                 <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
-        </ul>                        
+        </ul>
         <!-- END SIDEBAR MENU -->
     </div>
 </div>

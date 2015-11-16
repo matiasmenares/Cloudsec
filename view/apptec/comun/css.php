@@ -4,7 +4,7 @@
 <link href="<?php echo URL_VIEW; ?>css/font.css" rel="stylesheet" type="text/css" id="style_color"/>
 <link href="<?php echo URL_VIEW; ?>plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo URL_VIEW; ?>plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-<link href="<?php echo URL_VIEW; ?>plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="<?php echo URL_VIEW; ?>plugins/summernote/summernote.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo URL_VIEW; ?>plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo URL_VIEW; ?>plugins/select2/select2.css" rel="stylesheet" type="text/css"/>
@@ -36,7 +36,7 @@
 <link href="<?php echo URL_VIEW; ?>css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
 <link href="<?php echo URL_VIEW; ?>css/apptec.css" rel="stylesheet" type="text/css"/>-->
 
-<?php 
+<?php
 $css = $this->css->setCss();
 	foreach($css as $clave => $valor){
 		echo $valor;

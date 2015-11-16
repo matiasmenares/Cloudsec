@@ -29,10 +29,10 @@
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
-                                        <a href="inactivo/" class="btn btn-default btn-flat">Bloquear</a>
+                                        <a href="inactivo/" class="fa fa-lock" data-toggle="popover" title="Bloquear"></a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="login_out/" class="btn btn-default btn-flat">Cerrar Sesión</a>
+                                        <a href="login_out/" class="fa fa-sign-out" data-toggle="popover" title="Cerrar Sesión"></a>
                                     </div>
                                 </li>
                             </ul>

@@ -15,28 +15,26 @@
                                 <li>
                                     <a href="#">
                                     <span class="label label-sm label-icon label-success">
-                                    <i class="fa fa-truck"></i>
+                                    <i class="fa fa-check"></i>
                                     </span>
-                                    Pedidos Pendientes. <span class="time">
+                                    Mitigados <span class="time">
                                    </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                     <span class="label label-sm label-icon label-warning">
-                                    <i class="fa fa-cubes"></i>
+                                    <i class="fa fa-hourglass-half"></i>
                                     </span>
-                                    Stock Crítico. <span class="time">
-                                     Productos </span>
+                                    En proceso <span class="time"></span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                     <span class="label label-sm label-icon label-danger">
-                                    <i class="fa fa-cubes"></i>
+                                    <i class="fa fa-bug"></i>
                                     </span>
-                                    Stock Cero. <span class="time">
-                                    Productos </span>
+                                    Ataques <span class="time"></span>
                                     </a>
                                 </li>
                             </ul>
@@ -47,4 +45,4 @@
                             </a>
                         </li>
                     </ul>
-                </li>                
+                </li>
