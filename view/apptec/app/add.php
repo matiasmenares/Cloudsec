@@ -46,7 +46,7 @@
                     Configuración <i class="fa fa-angle-down"></i>
                     </button>
                     <ul class="dropdown-menu pull-right" role="menu">
-                       
+
                         <li>
                             <a href="#" data-toggle="modal" data-target=".modal">Configurar Impuesto</a>
                         </li>
@@ -143,7 +143,7 @@
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
-		                                <input type="text" class="form-control" name="email">
+		                                <input id="email" type="text" class="form-control" name="email">
 		                                <span class="help-block"> Email Administrador </span>
 		                            </div>
 		                        </div>
@@ -155,7 +155,7 @@
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
-		                                <input type="text" class="form-control" name="ruta">
+		                                <input id="ruta" type="text" class="form-control" name="ruta">
 		                                <span class="help-block"> Ejemplo /var/www/app/ </span>
 		                            </div>
 		                        </div>
@@ -188,7 +188,7 @@
 		                        <div class="form-group">
 		                            <label class="control-label col-md-3">Lenguaje Backend</label>
 		                            <div class="col-md-4">
-		                                <select name="leng_back" id="country_list" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+		                                <select name="leng_back" id="back_end_lang" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
 										<?php foreach($back as $key => $value){ ?>
 		                                <option value="<?php echo $value['id_code_backend']; ?>"><?php echo $value['nombre_code_backend']; ?></option>
 		                                <?php } ?>
@@ -198,7 +198,7 @@
 		                        <div class="form-group">
 		                            <label class="control-label col-md-3">Detalle</label>
 		                            <div class="col-md-4">
-		                                <textarea class="form-control" rows="3" name="detalle"></textarea>
+		                                <textarea id="detalle" class="form-control" rows="3" name="detalle"></textarea>
 		                            </div>
 		                        </div>
 		                    </div>
@@ -222,7 +222,7 @@
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
-		                                <input type="text" class="form-control" name="ip">
+		                                <input id = "ip" type="text" class="form-control" name="ip">
 		                                <span class="help-block"> </span>
 		                            </div>
 		                        </div>
@@ -376,7 +376,7 @@
 							    	<label class="control-label">Impuesto</label>
 							    	<div class="input-group">
 							    		<span class="input-group-addon">
-											<i class="fa fa-truck"></i>			
+											<i class="fa fa-truck"></i>
 										</span>
 										<select class="form-control select2me" name="impuesto" data-placeholder="Selecciona Impuesto...">
 										</select>
