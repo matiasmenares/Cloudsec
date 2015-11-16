@@ -125,7 +125,7 @@
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
-		                                <input type="text" class="form-control" name="nombre">
+		                                <input id="nombre"  type="text" class="form-control" name="nombre">
 		                                <span class="help-block"> Nombre de tu Aplicación </span>
 		                            </div>
 		                        </div>
@@ -134,7 +134,7 @@
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
-		                                <input type="text" class="form-control" name="url">
+		                                <input id="url" type="text" class="form-control" name="url">
 		                                <span class="help-block"> http://www.ejemplo.com </span>
 		                            </div>
 		                        </div>
