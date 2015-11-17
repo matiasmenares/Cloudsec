@@ -90,7 +90,7 @@ class Secure {
 
 	 
 	 
-	function encriptar($string) {
+	public function encript($string) {
    $result = '';
    for($i=0; $i<strlen($string); $i++) {
       $char = substr($string, $i, 1);

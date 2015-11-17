@@ -1,6 +1,7 @@
 
 </head>
 <link rel="stylesheet" href ="<?php echo TEMPLATE; ?>/css/profile.css" />
+<link rel="stylesheet" href ="<?php echo TEMPLATE; ?>plugins/bootstrap-switch/css/bootstrap-switch.css" />
 
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -61,11 +62,11 @@
             <div class="page-toolbar">
                 <div class="btn-group pull-right">
                     <button type="button" class="btn btn-fit-height red-thunderbird dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
-                    Actions <i class="fa fa-angle-down"></i>
+                    Configuración <i class="fa fa-angle-down"></i>
                     </button>
                     <ul class="dropdown-menu pull-right" role="menu">
                         <li>
-                            <a href="#">Action</a>
+                            <a href="#">Detener</a>
                         </li>
                         <li>
                             <a href="#">Another action</a>
@@ -95,7 +96,7 @@
                                     <!-- SIDEBAR USER TITLE -->
 							<div class="profile-usertitle">
 							<div class="profile-usertitle-name"> AppTest  </div>
-							<div class="profile-usertitle-job"> Amazon AWS </div>
+							<div class="profile-usertitle-job"> Opencart </div>
 						</div>
 						<!-- END SIDEBAR USER TITLE -->
 						<!-- SIDEBAR MENU -->
@@ -107,7 +108,7 @@
                                             </li>
                                             <li>
                                                 <a href="page_user_profile_1_account.html">
-                                                    <i class="icon-settings"></i> Configuración </a>
+                                                    <i class="icon-settings"></i> Ajustes </a>
                                             </li>
                                             <li>
                                                 <a href="page_user_profile_1_help.html">
@@ -157,10 +158,13 @@
                                                         <a href="#tab_1_1" data-toggle="tab">General</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#tab_1_2" data-toggle="tab">Alertas</a>
+                                                        <a href="#tab_1_2" data-toggle="tab">Servicios</a>
+                                                    </li>
+													<li>
+                                                        <a href="#tab_1_3" data-toggle="tab">Logs</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#tab_1_3" data-toggle="tab">Terms Of Use</a>
+                                                        <a href="#tab_1_4" data-toggle="tab">Configuración</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -169,33 +173,145 @@
                                                     <!-- GENERAL QUESTION TAB -->
                                                     <div class="tab-pane active" id="tab_1_1">
                                                         <div id="accordion1" class="panel-group">
-                                                            <div class="panel panel-default">
-                                                                <div class="panel-heading">
-                                                                    Uno
+                                                            <div class="panel">
+                                                                <div class="">
+	                                                                <div class="col-md-12">
+		                                                                <div class="col-md-4">
+																		<!-- BEGIN WIDGET THUMB -->
+											                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+											                                <h4 class="widget-thumb-heading">Vulnerabilidades</h4>
+											                                <div class="widget-thumb-wrap">
+											                                    <i class="widget-thumb-icon bg-red fa fa-bug"></i>
+											                                    <div class="widget-thumb-body">
+											                                        <span class="widget-thumb-subtitle"></span>
+											                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">3</span>
+											                                    </div>
+											                                </div>
+											                            </div>
+										                            <!-- END WIDGET THUMB -->
+		                                                                </div>
+		                                                                <div class="col-md-4">
+																		<!-- BEGIN WIDGET THUMB -->
+											                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+											                                <h4 class="widget-thumb-heading">Current Balance</h4>
+											                                <div class="widget-thumb-wrap">
+																			<i class="widget-thumb-icon bg-blue icon-layers"></i>											                                    <div class="widget-thumb-body">
+											                                        <span class="widget-thumb-subtitle"></span>
+											                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">7,644</span>
+											                                    </div>
+											                                </div>
+											                            </div>
+										                            <!-- END WIDGET THUMB -->
+		                                                                </div>
+		                                                                <div class="col-md-4">
+																		<!-- BEGIN WIDGET THUMB -->
+											                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+											                                <h4 class="widget-thumb-heading">Bloqueos</h4>
+											                                <div class="widget-thumb-wrap">
+											                                    <i class="widget-thumb-icon bg-green fa fa-shield"></i>
+											                                    <div class="widget-thumb-body">
+											                                        <span class="widget-thumb-subtitle"></span>
+											                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">20</span>
+											                                    </div>
+											                                </div>
+											                            </div>
+										                            <!-- END WIDGET THUMB -->
+		                                                                </div>
+	                                                                </div>
+	                                                            	<div class="col-md-6">
+		                                                            	 <div class="portlet-body">
+																		 	<canvas id="myChart" width="400" height="280"></canvas>
+																		</div>
+	                                                            	</div>
+	                                                                <div id="site_statistics_loading" style="display: none;">
+																		<img src="../assets/global/img/loading.gif" alt="loading">
+																	 </div>
+																	<div id="site_statistics_content" class="display-none" style="display: block;">
+																		<div id="site_statistics" class="chart" style="padding: 0px; position: relative;">                                                                																		</div>
+																	</div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <!-- END GENERAL QUESTION TAB -->
-                                                    <!-- MEMBERSHIP TAB -->
+                                                    <!-- SERVICIOS TAB -->
                                                     <div class="tab-pane" id="tab_1_2">
                                                         <div id="accordion2" class="panel-group">
-                                                            <div class="panel panel-warning">
-                                                                <div class="panel-heading">
-                                                                  Dos
-                                                                </div>
-                                                            </div>
+															<table class="table table-hover table-light">
+						                                            <thead>
+						                                                <tr class="uppercase">
+						                                                    <th> # </th>
+						                                                    <th> Servicio </th>
+						                                                    <th> Carpeta </th>
+						                                                    <th> Status </th>
+						                                                    <th> Acción </th>
+						                                                </tr>
+						                                            </thead>
+						                                            <tbody>
+						                                                <tr>
+						                                                    <td> 1 </td>
+						                                                    <th> Apache </th>
+						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                                <tr>
+						                                                    <td> 2 </td>
+						                                                    <th> OpenSSL </th>
+						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                                <tr>
+						                                                    <td> 3 </td>
+						                                                    <th> Larry </th>
+						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                                <tr>
+						                                                    <td> 4 </td>
+						                                                    <th> MySQL </th>
+						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                            </tbody>
+						                                        </table>
                                                         </div>
                                                     </div>
                                                     <!-- END MEMBERSHIP TAB -->
                                                     <!-- TERMS OF USE TAB -->
                                                     <div class="tab-pane" id="tab_1_3">
                                                         <div id="accordion3" class="panel-group">
-                                                            <div class="panel panel-danger">
-                                                                <div class="panel-heading">
-                                                                  aaa
-                                                                </div>
-                                                            </div>
+															<div class="panel-heading">
+                                                              <table>
+	                                                              <tr>
+		                                                              4
+	                                                              </tr>
+                                                              </table>
+															</div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END TERMS OF USE TAB -->
+                                                    <!-- TERMS OF USE TAB -->
+                                                    <div class="tab-pane" id="tab_1_4">
+                                                        <div id="accordion3" class="panel-group">
+															<div class="panel-heading">
+                                                              <table>
+	                                                              <tr>
+		                                                              3
+	                                                              </tr>
+                                                              </table>
+															</div>
                                                         </div>
                                                     </div>
                                                     <!-- END TERMS OF USE TAB -->
@@ -220,10 +336,33 @@
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/chartjs/Chart.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/chartdiv.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/app.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/dashboard.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/bootstrap-switch/js/bootstrap-switch.js"></script>
 
 </body>
 <!-- END BODY -->
 <script>
+	$("[name='my-checkbox']").bootstrapSwitch();
+var ctx = document.getElementById("myChart").getContext("2d");
+	var data = {
+	    labels: ["Brute Force", "CSRF", "LFI", "RFI", "XSS", "DDOS", "SQLi"],
+	    datasets: [
+	        {
+	            label: "My Second dataset",
+	            fillColor: "rgba(151,187,205,0.2)",
+	            strokeColor: "rgba(151,187,205,1)",
+	            pointColor: "rgba(151,187,205,1)",
+	            pointStrokeColor: "#fff",
+	            pointHighlightFill: "#fff",
+	            pointHighlightStroke: "rgba(151,187,205,1)",
+	            data: [28, 48, 40, 19, 96, 27, 100]
+	        }
+	    ]
+	};
+	var myRadarChart = new Chart(ctx).Radar(data);
 
 </script>
 

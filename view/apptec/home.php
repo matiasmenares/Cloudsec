@@ -3,11 +3,7 @@
 <body class="<?php if($_SESSION['menu_side'] == 0){ echo "page-sidebar-closed page-sidebar-closed-hide-logo"; }elseif($_SESSION['menu_side'] == 1){ echo ""; } ?>">
 <?php require(TEMPLATE.'comun/header.php'); ?>
 <?php require(TEMPLATE.'comun/menu.php'); ?>
-<script src="<?php echo TEMPLATE; ?>plugins/chartjs/Chart.js"></script>
-<script src="<?php echo TEMPLATE; ?>js/chartdiv.js"></script>
-<script src="http://www.amcharts.com/lib/3/ammap.js"></script>
-<script src="http://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
-<script src="http://www.amcharts.com/lib/3/themes/none.js"></script>
+
 <div class="page-content-wrapper">
     <div class="page-content">
         <div class="page-bar sombra">
@@ -21,7 +17,7 @@
 
 	        </ul>
         </div>
-		<div class="row">
+<div class="row">
 <div class="col-md-6 col-sm-6">
                             <div class="portlet light ">
                                 <div class="portlet-title">
@@ -401,16 +397,14 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                                       <div class="portlet light bordered">
-                                           <div class="portlet-title">
-                                               <div class="caption">
-                                                 <div id="chartdiv"></div>
-                                               </div>
-                                             </div>
-                                           </div>
-                                         </div>
-
-
+							<div class="portlet light bordered">
+								<div class="portlet-title">
+									<div class="caption">
+										<div id="chartdiv"></div>
+									</div>
+								</div>
+							</div>
+						</div>
 		</div>
 
 	</div>
@@ -429,9 +423,16 @@
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
-<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/chartjs/Chart.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/amchart.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/jquery.sparkline.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/slimscroll/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/chartjs/Chart.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/chartdiv.js"></script>
+<script type="text/javascript" src="http://www.amcharts.com/lib/3/ammap.js"></script>
+<script type="text/javascript" src="http://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/none.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/app.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/dashboard.js"></script>
 
 
 </body>
