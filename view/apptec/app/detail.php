@@ -183,7 +183,7 @@
 		                                                                <div class="col-md-4">
 																		<!-- BEGIN WIDGET THUMB -->
 											                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
-											                                <h4 class="widget-thumb-heading">Vulnerabilidades</h4>
+											                                <h4 class="widget-thumb-heading">Ataques</h4>
 											                                <div class="widget-thumb-wrap">
 											                                    <i class="widget-thumb-icon bg-red fa fa-bug"></i>
 											                                    <div class="widget-thumb-body">
@@ -338,7 +338,7 @@
 															<div class="panel-heading">
                                                               <table>
 	                                                              <tr>
-		                                                              3
+																  	<div id="mapdiv" style="width: 100%; background-color:#eeeeee; height: 400px;"></div>
 	                                                              </tr>
                                                               </table>
 															</div>
@@ -371,6 +371,11 @@
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>js/app.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/dashboard.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/bootstrap-switch/js/bootstrap-switch.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/ammap.js" ></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/maps/js/worldLow.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/plugins/responsive/responsive.min.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/map.js"></script>
+
 
 </body>
 <!-- END BODY -->
