@@ -19,7 +19,27 @@
 		echo json_encode(
 		    SSP::simple( $this->request->post, $sql_details, $table, $primaryKey, $columns )
 		);
-	}		
+	}
+	
+	public function access() {
+		
+		if(!empty($this->request->post)){
+			$table = 'log_aplicacion';
+			 
+			$primaryKey = 'id_log_aplicacion';
+			 
+			$columns = array(
+			    array( 'db' => 'id_log_aplicacion', 'dt' => 0 ),
+				array( 'db' => 'fecha_log_aplicacion', 'dt' => 1 )
+			);
+			 
+			require( 'ssp/app_access.ssp.php' );
+			 
+			echo json_encode(
+			    SSP::simple( $this->request->post, $sql_details, $table, $primaryKey, $columns )
+			);
+		}
+	}				
 	
 }
 

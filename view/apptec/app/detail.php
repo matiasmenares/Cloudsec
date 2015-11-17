@@ -110,7 +110,11 @@
                                                 <a href="page_user_profile_1_account.html">
                                                     <i class="icon-settings"></i> Ajustes </a>
                                             </li>
-                                            <li>
+											<li>
+                                                <a href="page_user_profile_1_account.html">
+                                                    <i class="fa fa-search"></i> Scanner </a>
+                                            </li>
+											<li>
                                                 <a href="page_user_profile_1_help.html">
                                                     <i class="icon-info"></i> Ayuda </a>
                                             </li>
@@ -193,11 +197,11 @@
 		                                                                <div class="col-md-4">
 																		<!-- BEGIN WIDGET THUMB -->
 											                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
-											                                <h4 class="widget-thumb-heading">Current Balance</h4>
+											                                <h4 class="widget-thumb-heading">Request</h4>
 											                                <div class="widget-thumb-wrap">
-																			<i class="widget-thumb-icon bg-blue icon-layers"></i>											                                    <div class="widget-thumb-body">
+																			<i class="widget-thumb-icon bg-blue icon-layers"></i>											                                  									  <div class="widget-thumb-body">
 											                                        <span class="widget-thumb-subtitle"></span>
-											                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">7,644</span>
+											                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">7.644</span>
 											                                    </div>
 											                                </div>
 											                            </div>
@@ -221,6 +225,11 @@
 	                                                            	<div class="col-md-6">
 		                                                            	 <div class="portlet-body">
 																		 	<canvas id="myChart" width="400" height="280"></canvas>
+																		</div>
+	                                                            	</div>
+																	<div class="col-md-6">
+		                                                            	 <div class="portlet-body">
+																		 	<canvas id="myChart2" width="400" height="280"></canvas>
 																		</div>
 	                                                            	</div>
 	                                                                <div id="site_statistics_loading" style="display: none;">
@@ -268,7 +277,7 @@
 						                                                </tr>
 						                                                <tr>
 						                                                    <td> 3 </td>
-						                                                    <th> Larry </th>
+						                                                    <th> Mail </th>
 						                                                    <th> /etc/httpd/apache/ </th>
 						                                                    <td>
 						                                                        <span class="label label-sm label-success"> Running </span>
@@ -292,13 +301,34 @@
                                                     <!-- TERMS OF USE TAB -->
                                                     <div class="tab-pane" id="tab_1_3">
                                                         <div id="accordion3" class="panel-group">
-															<div class="panel-heading">
-                                                              <table>
-	                                                              <tr>
-		                                                              4
-	                                                              </tr>
-                                                              </table>
-															</div>
+															<div class="portlet-body">
+																<table class="table table-striped table-bordered table-hover" id="cliente">
+																	<thead>
+																		<tr>
+																			<th>
+																				ID
+																			</th>
+																			<th>
+																				Nombre
+																			</th>
+																			<th>
+																				Lenguaje
+																			</th>
+																			<th>
+																				IP
+																			</th>
+																			<th>
+																				Estado
+																			</th>
+																			<th width="50px">
+																				Accion
+																			</th>
+																		</tr>																
+																	</thead>
+																<tbody>
+																</tbody>
+																</table>
+														</div>
                                                         </div>
                                                     </div>
                                                     <!-- END TERMS OF USE TAB -->
@@ -363,7 +393,50 @@ var ctx = document.getElementById("myChart").getContext("2d");
 	    ]
 	};
 	var myRadarChart = new Chart(ctx).Radar(data);
+	
+	var ctx2 = document.getElementById("myChart2").getContext("2d");
+	
+	var data2 = [
+    {
+        value: 20,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Red"
+    },
+    {
+        value: 100,
+        color: "#00a65a",
+        highlight: "#5AD3D1",
+        label: "Green"
+    },
+]
+	var myDoughnutChart = new Chart(ctx2).Doughnut(data2);
 
+   $('#cliente').DataTable( {
+        "processing": true,
+        "stateSave": true,
+        "responsive": true,
+        "serverSide": true,
+        "ajax": {
+            "url": "datatable/app_access/",
+            "type": "POST"
+        },
+        "columns": [
+            { "data": 0 },
+            { "data": 1 },
+			{
+            	"class":          "details-control",
+                "orderable":      false,
+                "data":           0,
+                "defaultContent": "",
+                "render": function (data)
+                {
+					return '<a class="btn red fileinput-button" href="app/detail/'+data+'/">Bloquear</a>';
+				} 
+			},
+        ]
+        
+        });
 </script>
 
 <!-- END BODY -->
