@@ -1,3 +1,4 @@
+	<link rel="stylesheet" href="<?php echo TEMPLATE; ?>plugins/ammap/ammap.css" type="text/css" media="all" />
 </head>
 
 <body class="<?php if($_SESSION['menu_side'] == 0){ echo "page-sidebar-closed page-sidebar-closed-hide-logo"; }elseif($_SESSION['menu_side'] == 1){ echo ""; } ?>">
@@ -405,6 +406,15 @@
 								</div>
 							</div>
 						</div>
+                        <div class="col-md-12">
+							<div class="portlet light bordered">
+								<div class="portlet-title">
+									<div class="caption">
+									</div>
+										<div id="mapdiv" style="width: 100%; background-color:#eeeeee; height: 500px;"></div>
+								</div>
+							</div>
+						</div>
 		</div>
 
 	</div>
@@ -427,11 +437,11 @@
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/jquery.sparkline.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/slimscroll/jquery.slimscroll.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/chartjs/Chart.js"></script>
-<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/chartdiv.js"></script>
-<script type="text/javascript" src="http://www.amcharts.com/lib/3/ammap.js"></script>
-<script type="text/javascript" src="http://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
-<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/none.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>js/app.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/ammap.js" ></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/maps/js/worldLow.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/plugins/responsive/responsive.min.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/map.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/dashboard.js"></script>
 
 

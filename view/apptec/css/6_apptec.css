@@ -441,3 +441,61 @@ color: #eee;
 .h3-dinero{
 	margin-top: 0px;
 }
+
+/*MAPA*/
+.amcharts-map-line {
+                stroke-dasharray: 2px 2px;
+                stroke-linejoin: round;
+                stroke-linecap: round;
+                -webkit-animation: am-moving-dashes 3s linear infinite;
+                animation: am-moving-dashes 3s linear infinite;
+            }
+
+            @-webkit-keyframes am-moving-dashes {
+                100% {
+                    stroke-dashoffset: -30px;
+                }
+            }
+            @keyframes am-moving-dashes {
+                100% {
+                    stroke-dashoffset: -30px;
+                }
+            }
+
+
+            .amcharts-map-image-london {
+                -webkit-animation: am-pulsating 1s ease-out infinite;
+                animation: am-pulsating 1s ease-out infinite;
+            }
+            @-webkit-keyframes am-pulsating {
+                0% {
+                    transform: scale(0);
+                    opacity:1;
+                }
+                100% {
+                    transform: scale(4);
+                    opacity:0;
+                }
+            }
+            @keyframes am-pulsating {
+                0% {
+                    transform: scale(0);
+                    opacity:1;
+                }
+                100% {
+                    transform: scale(4);
+                    opacity:0;
+                }
+            }
+
+
+            .amcharts-map-area {
+                -webkit-transition: all .3s .3s ease-out;
+                transition: all .3s .3s ease-out;
+            }
+            .amcharts-map-area:hover {
+                fill: #93c765;
+                stroke: #93c765;
+                -webkit-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+            }
