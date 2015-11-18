@@ -73,7 +73,7 @@
 								labelRollOverColor: "#CC0000",
 								labelFontSize: 20
 							}, {
-								label: "Ver Sucursal Vilnius",
+								label: "Ver Raiz de Ataques",
 								left: 106,
 								top: 70,
 								labelColor: "#000000",

@@ -112,7 +112,7 @@
                             </div>
 							<!-- END WORLD PORTLET-->
              </div>
-             <div class="col-md-6 col-sm-6">
+             <div class="col-md-6 col-sm-6" style="margin-top: -130px">
                             <div class="portlet light bordered">
                                 <div class="portlet-title">
                                     <div class="caption">
@@ -397,16 +397,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-							<div class="portlet light bordered">
-								<div class="portlet-title">
-									<div class="caption">
-										<div id="chartdiv"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-                        <div class="col-md-12">
+              <div class="col-md-6">
 							<div class="portlet light bordered">
 								<div class="portlet-title">
 									<div class="caption">
