@@ -73,7 +73,7 @@
 								labelRollOverColor: "#CC0000",
 								labelFontSize: 20
 							}, {
-								label: "Ver Raiz de Ataques",
+								label: "Ataques en proceso",
 								left: 106,
 								top: 70,
 								labelColor: "#000000",
@@ -131,7 +131,7 @@
 							}],
 
 							images: [{
-								label: "Ataques en Vilnius",
+								label: "Ataques en proceso",
 								svgPath: "",
 								left: 100,
 								top: 45,
@@ -141,7 +141,7 @@
 								labelRollOverColor: "#CC0000",
 								labelFontSize: 20
 							}, {
-								label: "Ver Sucursal Chile",
+								label: "Ver ataques a Chile",
 								left: 106,
 								top: 70,
 								labelColor: "#000000",
