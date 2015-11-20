@@ -168,6 +168,9 @@
                                                         <a href="#tab_1_3" data-toggle="tab">Logs</a>
                                                     </li>
                                                     <li>
+                                                        <a href="#tab_1_4" data-toggle="tab">Mapa</a>
+                                                    </li>
+													<li>
                                                         <a href="#tab_1_4" data-toggle="tab">Configuración</a>
                                                     </li>
                                                 </ul>
@@ -232,11 +235,8 @@
 																		 	<canvas id="myChart2" width="400" height="280"></canvas>
 																		</div>
 	                                                            	</div>
-	                                                                <div id="site_statistics_loading" style="display: none;">
-																		<img src="../assets/global/img/loading.gif" alt="loading">
-																	 </div>
 																	<div id="site_statistics_content" class="display-none" style="display: block;">
-																		<div id="site_statistics" class="chart" style="padding: 0px; position: relative;">                                                                																		</div>
+																		<div id="chartdiv" style="width	: 100%;height: 500px;"></div>
 																	</div>
                                                                 </div>
                                                             </div>
@@ -337,9 +337,9 @@
                                                         <div id="accordion3" class="panel-group">
 															<div class="panel-heading">
                                                               <table>
-	                                                              <tr>
-																  	<div id="mapdiv" style="width: 100%; background-color:#eeeeee; height: 400px;"></div>
-	                                                              </tr>
+															  		<tr>
+																	  <div id="mapdiv" style="width: 100%; background-color:#eeeeee; height: 400px;"></div>
+																	</tr>
                                                               </table>
 															</div>
                                                         </div>
@@ -375,7 +375,10 @@
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/maps/js/worldLow.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/plugins/responsive/responsive.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>js/map.js"></script>
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 
+<script src="https://www.amcharts.com/lib/3/serial.js"></scrip>
+<script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
 
 </body>
 <!-- END BODY -->
@@ -442,6 +445,106 @@ var ctx = document.getElementById("myChart").getContext("2d");
         ]
         
         });
+        
+ var chart = AmCharts.makeChart("chartdiv", {
+    "type": "serial",
+    "theme": "dark",
+    "marginRight": 80,
+    "marginTop": 17,
+    "autoMarginOffset": 20,
+    "dataProvider": [{
+        "date": "2012-03-01",
+        "price": 20
+    }, {
+        "date": "2012-03-02",
+        "price": 75
+    }, {
+        "date": "2012-03-03",
+        "price": 15
+    }, {
+        "date": "2012-03-04",
+        "price": 75
+    }, {
+        "date": "2012-03-05",
+        "price": 158
+    }, {
+        "date": "2012-03-06",
+        "price": 57
+    }, {
+        "date": "2012-03-07",
+        "price": 107
+    }, {
+        "date": "2012-03-08",
+        "price": 89
+    }, {
+        "date": "2012-03-09",
+        "price": 75
+    }, {
+        "date": "2012-03-10",
+        "price": 132
+    }, {
+        "date": "2012-03-11",
+        "price": 158
+    }, {
+        "date": "2012-03-12",
+        "price": 56
+    }, {
+        "date": "2012-03-13",
+        "price": 169
+    }, {
+        "date": "2012-03-14",
+        "price": 24
+    }, {
+        "date": "2012-03-15",
+        "price": 147
+    }],
+    "valueAxes": [{
+        "logarithmic": true,
+        "dashLength": 1,
+        "guides": [{
+            "dashLength": 6,
+            "inside": true,
+            "label": "average",
+            "lineAlpha": 1,
+            "value": 90.4
+        }],
+        "position": "left"
+    }],
+    "graphs": [{
+        "bullet": "round",
+        "id": "g1",
+        "bulletBorderAlpha": 1,
+        "bulletColor": "#FFFFFF",
+        "bulletSize": 7,
+        "lineThickness": 2,
+        "title": "Price",
+        "type": "smoothedLine",
+        "useLineColorForBulletBorder": true,
+        "valueField": "price"
+    }],
+    "chartScrollbar": {},
+    "chartCursor": {
+        "valueLineEnabled": true,
+        "valueLineBalloonEnabled": true,
+        "valueLineAlpha": 0.5,
+        "fullWidth": true,
+        "cursorAlpha": 0.05
+    },
+    "dataDateFormat": "YYYY-MM-DD",
+    "categoryField": "date",
+    "categoryAxis": {
+        "parseDates": true
+    },
+    "export": {
+        "enabled": true
+    }
+});
+
+chart.addListener("dataUpdated", zoomChart);
+
+function zoomChart() {
+    chart.zoomToDates(new Date(2012, 2, 2), new Date(2012, 2, 10));
+}
 </script>
 
 <!-- END BODY -->
