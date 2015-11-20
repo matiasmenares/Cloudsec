@@ -117,7 +117,19 @@ $(document).ready(function() {
         "columns": [
             { "data": 0 },
             { "data": 1 },
-	        { "data": 2 },
+
+			{ 
+            	"class":          "details-control",
+                "orderable":      false,
+                "data":           0,
+                "defaultContent": "",
+                "render": function (data)
+                {
+					return 'PHP';
+				} 
+			},
+			{ "data": 2 },
+
 			{ 
             	"class":          "details-control",
                 "orderable":      false,

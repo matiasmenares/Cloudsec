@@ -171,7 +171,7 @@
                                                         <a href="#tab_1_4" data-toggle="tab">Mapa</a>
                                                     </li>
 													<li>
-                                                        <a href="#tab_1_4" data-toggle="tab">Configuración</a>
+                                                        <a href="#tab_1_5" data-toggle="tab">Configuración</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -345,6 +345,20 @@
                                                         </div>
                                                     </div>
                                                     <!-- END TERMS OF USE TAB -->
+                                                                                                        <!-- TERMS OF USE TAB -->
+                                                    <div class="tab-pane" id="tab_1_5">
+                                                        <div id="accordion3" class="panel-group">
+															<div class="panel-heading">
+                                                              <table>
+															  		<tr>
+															  		a
+																	</tr>
+                                                              </table>
+															</div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END TERMS OF USE TAB -->
+
                                                 </div>
                                             </div>
                                         </div>
@@ -431,6 +445,9 @@ var ctx = document.getElementById("myChart").getContext("2d");
         },
         "columns": [
             { "data": 0 },
+            { "data": 1 },
+			{ "data": 1 },
+            { "data": 1 },
             { "data": 1 },
 			{
             	"class":          "details-control",
