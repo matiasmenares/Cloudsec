@@ -389,7 +389,7 @@
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/maps/js/worldLow.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/plugins/responsive/responsive.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>js/map.js"></script>
-<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/amchart.js"></script>
 
 <script src="https://www.amcharts.com/lib/3/serial.js"></scrip>
 <script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
@@ -423,13 +423,13 @@ var ctx = document.getElementById("myChart").getContext("2d");
         value: 20,
         color:"#F7464A",
         highlight: "#FF5A5E",
-        label: "Red"
+        label: "Malignas"
     },
     {
         value: 100,
         color: "#00a65a",
         highlight: "#5AD3D1",
-        label: "Green"
+        label: "Fidedignas"
     },
 ]
 	var myDoughnutChart = new Chart(ctx2).Doughnut(data2);
@@ -470,50 +470,38 @@ var ctx = document.getElementById("myChart").getContext("2d");
     "marginTop": 17,
     "autoMarginOffset": 20,
     "dataProvider": [{
-        "date": "2012-03-01",
+        "date": "2015-01-01",
         "price": 20
     }, {
-        "date": "2012-03-02",
+        "date": "2015-02-01",
         "price": 75
     }, {
-        "date": "2012-03-03",
+        "date": "2015-04-01",
         "price": 15
     }, {
-        "date": "2012-03-04",
+        "date": "2015-05-01",
         "price": 75
     }, {
-        "date": "2012-03-05",
+        "date": "2015-06-01",
         "price": 158
     }, {
-        "date": "2012-03-06",
+        "date": "2015-07-01",
         "price": 57
     }, {
-        "date": "2012-03-07",
+        "date": "2015-08-01",
         "price": 107
     }, {
-        "date": "2012-03-08",
+        "date": "2015-09-01",
         "price": 89
     }, {
-        "date": "2012-03-09",
+        "date": "2015-10-01",
         "price": 75
     }, {
-        "date": "2012-03-10",
+        "date": "2015-11-01",
         "price": 132
     }, {
-        "date": "2012-03-11",
+        "date": "2015-12-18",
         "price": 158
-    }, {
-        "date": "2012-03-12",
-        "price": 56
-    }, {
-        "date": "2012-03-13",
-        "price": 169
-    }, {
-        "date": "2012-03-14",
-        "price": 24
-    }, {
-        "date": "2012-03-15",
-        "price": 147
     }],
     "valueAxes": [{
         "logarithmic": true,
@@ -560,7 +548,7 @@ var ctx = document.getElementById("myChart").getContext("2d");
 chart.addListener("dataUpdated", zoomChart);
 
 function zoomChart() {
-    chart.zoomToDates(new Date(2012, 2, 2), new Date(2012, 2, 10));
+    chart.zoomToDates(new Date(2015, 11, 1), new Date(2015, 12, 18));
 }
 </script>
 
