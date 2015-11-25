@@ -348,13 +348,45 @@
                                                                                                         <!-- TERMS OF USE TAB -->
                                                     <div class="tab-pane" id="tab_1_5">
                                                         <div id="accordion3" class="panel-group">
-															<div class="panel-heading">
-                                                              <table>
-															  		<tr>
-															  		a
-																	</tr>
-                                                              </table>
-															</div>
+															<table class="table table-hover table-light">
+						                                            <thead>
+						                                                <tr class="uppercase">
+						                                                    <th> Servicio </th>
+						                                                    <th> Status </th>
+						                                                    <th> Acción </th>
+						                                                </tr>
+						                                            </thead>
+						                                            <tbody>
+						                                                <tr>
+						                                                    <th colspan="2"> Apache </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                                <tr>
+						                                                    <th colspan="2"> OpenSSL </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                                <tr>
+						                                                    <th colspan="2"> Mail </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                                <tr>
+						                                                    <th colspan="2"> MySQL </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                            </tbody>
+						                                        </table>
                                                         </div>
                                                     </div>
                                                     <!-- END TERMS OF USE TAB -->
