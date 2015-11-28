@@ -92,7 +92,7 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="fa fa-bug font-green"></i>
-                                        <span class="caption-subject font-green bold uppercase">Metodos de Ataque</span>
+                                        <span class="caption-subject font-green bold uppercase">Métodos de Ataque</span>
                                     </div>
                                     <div class="actions">
                                         <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">

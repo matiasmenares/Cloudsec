@@ -95,7 +95,7 @@
                                     <!-- END SIDEBAR USERPIC -->
                                     <!-- SIDEBAR USER TITLE -->
 							<div class="profile-usertitle">
-							<div class="profile-usertitle-name"> AppTest  </div>
+							<div class="profile-usertitle-name"> <?php echo $detail['nombre_aplicacion']; ?>  </div>
 							<div class="profile-usertitle-job"> Opencart </div>
 						</div>
 						<!-- END SIDEBAR USER TITLE -->
@@ -140,14 +140,14 @@
                                     </div>
                                     <!-- END STAT -->
                                         <h4 class="profile-desc-title">Detalle</h4>
-                                        <span class="profile-desc-text"> Lorem ipsum dolor sit amet diam nonummy nibh dolore. </span>
+                                        <span class="profile-desc-text"> <?php echo $detail['detalle_aplicacion']; ?> </span>
                                         <div class="margin-top-20 profile-desc-link">
                                             <i class="fa fa-globe"></i>
-                                            <a href="http://www.keenthemes.com">www.cloudsec.com</a>
+                                            <a href="http://www.keenthemes.com"> <?php echo $detail['url_aplicacion']; ?></a>
                                         </div>
                                         <div class="margin-top-20 profile-desc-link">
                                             <i class="fa fa-envelope"></i>
-                                            <a href="http://www.twitter.com/keenthemes/">admin@cloudsec</a>
+                                            <a href="http://www.twitter.com/keenthemes/"><?php echo $detail['email_aplicacion']; ?></a>
                                         </div>
                                     </div>
                                 </div>
@@ -162,7 +162,7 @@
                                                         <a href="#tab_1_1" data-toggle="tab">General</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#tab_1_2" data-toggle="tab">Servicios</a>
+                                                        <a href="#tab_1_2" data-toggle="tab">Notificaciones</a>
                                                     </li>
 													<li>
                                                         <a href="#tab_1_3" data-toggle="tab">Logs</a>
@@ -246,111 +246,9 @@
                                                         </div>
                                                     </div>
                                                     <!-- END GENERAL QUESTION TAB -->
-                                                    <!-- SERVICIOS TAB -->
-                                                    <div class="tab-pane" id="tab_1_2">
-                                                        <div id="accordion2" class="panel-group">
-															<table class="table table-hover table-light">
-						                                            <thead>
-						                                                <tr class="uppercase">
-						                                                    <th> # </th>
-						                                                    <th> Servicio </th>
-						                                                    <th> Carpeta </th>
-						                                                    <th> Status </th>
-						                                                    <th> Acción </th>
-						                                                </tr>
-						                                            </thead>
-						                                            <tbody>
-						                                                <tr>
-						                                                    <td> 1 </td>
-						                                                    <th> Apache </th>
-						                                                    <th> /etc/httpd/apache/ </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                                <tr>
-						                                                    <td> 2 </td>
-						                                                    <th> OpenSSL </th>
-						                                                    <th> /etc/httpd/apache/ </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                                <tr>
-						                                                    <td> 3 </td>
-						                                                    <th> Mail </th>
-						                                                    <th> /etc/httpd/apache/ </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                                <tr>
-						                                                    <td> 4 </td>
-						                                                    <th> MySQL </th>
-						                                                    <th> /etc/httpd/apache/ </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                            </tbody>
-						                                        </table>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END MEMBERSHIP TAB -->
-                                                    <!-- TERMS OF USE TAB -->
-                                                    <div class="tab-pane" id="tab_1_3">
-                                                        <div id="accordion3" class="panel-group">
-															<div class="portlet-body">
-																<table class="table table-striped table-bordered table-hover" id="cliente">
-																	<thead>
-																		<tr>
-																			<th>
-																				ID
-																			</th>
-																			<th>
-																				Nombre
-																			</th>
-																			<th>
-																				Lenguaje
-																			</th>
-																			<th>
-																				IP
-																			</th>
-																			<th>
-																				Estado
-																			</th>
-																			<th width="50px">
-																				Accion
-																			</th>
-																		</tr>																
-																	</thead>
-																<tbody>
-																</tbody>
-																</table>
-														</div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END TERMS OF USE TAB -->
-                                                    <!-- TERMS OF USE TAB -->
-                                                    <div class="tab-pane" id="tab_1_4">
-                                                        <div id="accordion3" class="panel-group">
-															<div class="panel-heading">
-                                                              <table>
-															  		<tr>
-																	  <div id="mapdiv" style="width: 100%; background-color:#eeeeee; height: 400px;"></div>
-																	</tr>
-                                                              </table>
-															</div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END TERMS OF USE TAB -->
-                                                            <!-- TERMS OF USE TAB -->
-                                                    <div class="tab-pane" id="tab_1_5">
-                                                        <div class="portlet light bordered">
+    <!-- TERMS OF USE TAB -->
+					<div class="tab-pane" id="tab_1_2">
+						<div class="portlet light bordered">
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-share font-blue"></i>
@@ -651,8 +549,109 @@
                                 </div>
                             </div>
                                                     </div>
+                                                    <!-- END TERMS OF USE TAB -->                                                    <!-- TERMS OF USE TAB -->
+                                                    <div class="tab-pane" id="tab_1_3">
+                                                        <div id="accordion3" class="panel-group">
+															<div class="portlet-body">
+																<table class="table table-striped table-bordered table-hover" id="cliente">
+																	<thead>
+																		<tr>
+																			<th>
+																				ID
+																			</th>
+																			<th>
+																				Nombre
+																			</th>
+																			<th>
+																				Lenguaje
+																			</th>
+																			<th>
+																				IP
+																			</th>
+																			<th>
+																				Estado
+																			</th>
+																			<th width="50px">
+																				Accion
+																			</th>
+																		</tr>																
+																	</thead>
+																<tbody>
+																</tbody>
+																</table>
+														</div>
+                                                        </div>
+                                                    </div>
                                                     <!-- END TERMS OF USE TAB -->
-                                                                                                        <!-- TERMS OF USE TAB -->
+                                                    <!-- TERMS OF USE TAB -->
+                                                    <div class="tab-pane" id="tab_1_4">
+                                                        <div id="accordion3" class="panel-group">
+															<div class="panel-heading">
+                                                              <table>
+															  		<tr>
+																	  <div id="mapdiv" style="width: 100%; background-color:#eeeeee; height: 400px;"></div>
+																	</tr>
+                                                              </table>
+															</div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END TERMS OF USE TAB -->
+                                                      <!-- SERVICIOS TAB -->
+                                                    <div class="tab-pane" id="tab_1_5">
+                                                        <div id="accordion2" class="panel-group">
+															<table class="table table-hover table-light">
+						                                            <thead>
+						                                                <tr class="uppercase">
+						                                                    <th> # </th>
+						                                                    <th> Servicio </th>
+						                                                    <th> Carpeta </th>
+						                                                    <th> Status </th>
+						                                                    <th> Acción </th>
+						                                                </tr>
+						                                            </thead>
+						                                            <tbody>
+						                                                <tr>
+						                                                    <td> 1 </td>
+						                                                    <th> Apache </th>
+						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                                <tr>
+						                                                    <td> 2 </td>
+						                                                    <th> OpenSSL </th>
+						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                                <tr>
+						                                                    <td> 3 </td>
+						                                                    <th> Mail </th>
+						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                                <tr>
+						                                                    <td> 4 </td>
+						                                                    <th> MySQL </th>
+						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <td>
+						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                    </td>
+																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
+						                                                </tr>
+						                                            </tbody>
+						                                        </table>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END MEMBERSHIP TAB -->
+													<!-- TERMS OF USE TAB -->
                                                     <div class="tab-pane" id="tab_1_6">
                                                         <div id="accordion3" class="panel-group">
 															<table class="table table-hover table-light">
