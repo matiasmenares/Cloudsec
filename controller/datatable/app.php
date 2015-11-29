@@ -13,9 +13,7 @@
 			array( 'db' => 'nombre_aplicacion', 'dt' => 1 ),
 			array( 'db' => 'ip_aplicacion',  'dt' => 2 ),
 		);
-		 
 		require( 'ssp/app.ssp.php' );
-		 
 		echo json_encode(
 		    SSP::simple( $this->request->post, $sql_details, $table, $primaryKey, $columns )
 		);
@@ -30,13 +28,14 @@
 			 
 			$columns = array(
 			    array( 'db' => 'id_log_aplicacion', 'dt' => 0 ),
-				array( 'db' => 'fecha_log_aplicacion', 'dt' => 1 )
+				array( 'db' => 'fecha_log_aplicacion', 'dt' => 1 ),
+				array( 'db' => 'ip', 'dt' => 2 ),
+				array( 'db' => 'nombre_navegador', 'dt' => 3),
+				array( 'db' => 'nombre_isp', 'dt' => 4 )
 			);
-			 
 			require( 'ssp/app_access.ssp.php' );
-			 
 			echo json_encode(
-			    SSP::simple( $this->request->post, $sql_details, $table, $primaryKey, $columns )
+			    SSP::simple($this->request->get['var1'],$this->request->post, $sql_details, $table, $primaryKey, $columns )
 			);
 		}
 	}				

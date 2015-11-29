@@ -171,7 +171,7 @@
                                                         <a href="#tab_1_4" data-toggle="tab">Mapa</a>
                                                     </li>
 													<li>
-                                                        <a href="#tab_1_5" data-toggle="tab">Notificaciones</a>
+                                                        <a href="#tab_1_5" data-toggle="tab">Servicios</a>
                                                     </li>
 													<li>
                                                         <a href="#tab_1_6" data-toggle="tab">Configuración</a>
@@ -549,11 +549,12 @@
                                 </div>
                             </div>
                                                     </div>
-                                                    <!-- END TERMS OF USE TAB -->                                                    <!-- TERMS OF USE TAB -->
+                                                    <!-- END TERMS OF USE TAB -->
+													<!-- TERMS OF USE TAB -->
                                                     <div class="tab-pane" id="tab_1_3">
                                                         <div id="accordion3" class="panel-group">
 															<div class="portlet-body">
-																<table class="table table-striped table-bordered table-hover" id="cliente">
+																<table class="table table-striped table-bordered table-hover" id="access">
 																	<thead>
 																		<tr>
 																			<th>
@@ -772,21 +773,21 @@ var ctx = document.getElementById("myChart").getContext("2d");
 ]
 	var myDoughnutChart = new Chart(ctx2).Doughnut(data2);
 
-   $('#cliente').DataTable( {
+   $('#access').DataTable( {
         "processing": true,
         "stateSave": true,
         "responsive": true,
         "serverSide": true,
         "ajax": {
-            "url": "datatable/app_access/",
+            "url": "datatable/app_access/<?php echo $this->request->get['var1']; ?>/",
             "type": "POST"
         },
         "columns": [
             { "data": 0 },
             { "data": 1 },
-			{ "data": 1 },
-            { "data": 1 },
-            { "data": 1 },
+			{ "data": 2 },
+            { "data": 3 },
+            { "data": 4 },
 			{
             	"class":          "details-control",
                 "orderable":      false,

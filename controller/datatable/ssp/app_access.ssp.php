@@ -190,7 +190,7 @@ class SSP {
 		}
 
 		if ( $where !== '' ) {
-			$where = ' WHERE '.$where;
+			$where = ' AND '.$where;
 		}
 
 		return $where;
@@ -211,7 +211,7 @@ class SSP {
 	 *  @param  array $columns Column information array
 	 *  @return array          Server-side processing response array
 	 */
-	static function simple ( $request, $sql_details, $table, $primaryKey, $columns )
+	static function simple ($param, $request, $sql_details, $table, $primaryKey, $columns )
 	{
 		$bindings = array();
 		$db = SSP::sql_connect( $sql_details );
@@ -226,11 +226,13 @@ class SSP {
 		$data = SSP::sql_exec( $db, $bindings, 
 			"SELECT SQL_CALC_FOUND_ROWS `".implode("`, `", SSP::pluck($columns, 'db'))."`
 			 FROM `$table`
-			 $where 
+			 INNER JOIN navegador ON navegador.id_navegador = ".$table.".navegador_id_navegador
+			 INNER JOIN ip ON ip.id_ip = ".$table.".ip_id_ip
+			 INNER JOIN isp ON isp.id_isp = ".$table.".isp_id_isp
+			 WHERE log_aplicacion.aplicacion_id_aplicacion = ".(int) $request." $where
 			 $order
 			 $limit"
 		);
-	
 
 		// Data set length after filtering
 		$resFilterLength = SSP::sql_exec( $db,
