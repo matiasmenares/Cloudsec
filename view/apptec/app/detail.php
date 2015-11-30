@@ -275,7 +275,7 @@
                                     </div>
                                 </div>
                                 <div class="portlet-body">
-                                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><div class="scroller" style="height: 300px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
+                                    <div class="" style="position: relative; overflow: scroll; width: auto; height: 300px;">
                                         <ul class="feeds">
                                             <li>
                                                 <div class="col1">
