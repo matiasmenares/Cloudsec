@@ -64,11 +64,11 @@
                 <span <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
-            <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
-                <a href="categoria/lista/">
+            <li  <?php if($_SESSION['menu']=='escaner') echo 'class="active"'; ?>>
+                <a href="escaner/">
                 <i class="fa fa-search"></i>
                 <span class="title">Escaner</span>
-                <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
+                <span <?php if($_SESSION['menu']=='escaner') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
             <li  <?php if($_SESSION['menu']=='lista-orden' or $_SESSION['menu']=='lista-distribuir-orden') echo 'class="active open"'; ?>>
