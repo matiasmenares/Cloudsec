@@ -41,10 +41,10 @@
                         			</tr>
                     			</thead>
 								<tbody id="insertaEscaner">
-								<?php for($x=0; $x<10; $x++){ ?>
+								<?php for($x=10; $x>=1; $x--){ ?>
 									<tr class="bg-gray">
 										<td class="fit" colspan="2">
-											<a href="javascript:;" class="primary-link">bb</a>
+											<a href="javascript:;" class="primary-link"><?php echo $x; ?></a>
                         				</td>
 										<td> aa </td>
 										<td> aa</td>
@@ -82,10 +82,12 @@
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/chartjs/Chart.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>js/app.js"></script>
 <script>
+	var x=11;
 	setInterval(function(){ 
 		$('.animated').addClass( 'bg-gray' );
 		$('.animated').removeClass( 'animated' );
-		$('#insertaEscaner').prepend('<tr class="fadeInRight animated"><td class="fit" colspan="2"><div><a href="javascript:;" class="primary-link">cc</a></div></td><td> aa </td><td> aa</td><td> Fine </td><td><span class="bold theme-font">98%</span></td></tr>');
+		$('#insertaEscaner').prepend('<tr class="fadeInRight animated"><td class="fit" colspan="2"><div><a href="javascript:;" class="primary-link">'+x+'</a></div></td><td> aa </td><td> aa</td><td> Fine </td><td><span class="bold theme-font">98%</span></td></tr>');
+		x++;
 	}, 5000);	
 </script>
 
