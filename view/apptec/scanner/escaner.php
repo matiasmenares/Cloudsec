@@ -23,9 +23,9 @@
 				<div class="portlet light ">
 					<div class="portlet-title">
 						<div class="caption caption-md">
-							<i class="fa fa-rocket font-red"></i>
-							<span class="caption-subject font-red bold uppercase">Aplicación</span>
-							<span class="caption-helper">Aplicaciones Corriendo</span>
+							<i class="fa fa-search font-red"></i>
+							<span class="caption-subject font-red bold uppercase">Scanner</span>
+							<span class="caption-helper"></span>
             			</div>
         			</div>
 					<div class="portlet-body">
@@ -33,24 +33,26 @@
 							<table class="table table-hover table-light">
 								<thead>
 									<tr class="uppercase">
-										<th colspan="2"> Aplicaciones </th>
-										<th> Servidor </th>
+										<th colspan="3"> CVE </th>
+										<th> Vulnerabilidad </th>
 										<th> IP </th>
-										<th> Estado </th>
-										<th> Tasa </th>
+										<th> Aplicación </th>
+										<th> Score </th>
+										<th> Detalle </th>
                         			</tr>
                     			</thead>
 								<tbody id="insertaEscaner">
 								<?php for($x=10; $x>=1; $x--){ ?>
 									<tr class="bg-gray">
-										<td class="fit" colspan="2">
-											<a href="javascript:;" class="primary-link"><?php echo $x; ?></a>
+										<td class="fit" colspan="3">
+											<a href="javascript:;" class="primary-link">CVE-2015-33-<?php echo $x; ?></a>
                         				</td>
-										<td> aa </td>
-										<td> aa</td>
-										<td> Fine </td>
+										<td> SQli </td>
+										<td> 52.110.55.1</td>
+										<td> CloudSec </td>
+										<td> 7.1 </td>
 										<td>
-											<span class="bold theme-font">98%</span>
+											<span class="bold theme-font">Detalle</span>
                         				</td>
                     				</tr>
 								<?php } ?>
@@ -86,7 +88,7 @@
 	setInterval(function(){ 
 		$('.animated').addClass( 'bg-gray' );
 		$('.animated').removeClass( 'animated' );
-		$('#insertaEscaner').prepend('<tr class="fadeInRight animated"><td class="fit" colspan="2"><div><a href="javascript:;" class="primary-link">'+x+'</a></div></td><td> aa </td><td> aa</td><td> Fine </td><td><span class="bold theme-font">98%</span></td></tr>');
+		$('#insertaEscaner').prepend('<tr class="fadeInRight animated"><td class="fit" colspan="3"><div><a href="javascript:;" class="primary-link">CVE-2015-001-'+x+'</a></div></td><td> SQLi </td><td>42.43.33.'+x+'</td><td> CloudSec </td><td> 7.1 </td><td><span class="bold theme-font">detalle</span></td></tr>');
 		x++;
 	}, 5000);	
 </script>

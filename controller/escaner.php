@@ -1,10 +1,10 @@
 <?php
 	
- class Escaner extends Controller {		
+Class Escaner extends Controller {		
 
 	public function index() {
 		
-		$this->render("escaner.php",$output=null);
+		$this->render("scanner/escaner.php",$output=null);
 
 	}			
 	
