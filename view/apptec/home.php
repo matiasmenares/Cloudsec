@@ -113,13 +113,12 @@
 							<!-- END WORLD PORTLET-->
              </div>
              <div class="col-md-6 col-sm-6" style="margin-top: -130px">
-                            <div class="portlet light bordered">
+	             <div class="portlet light bordered">
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-share font-blue"></i>
                                         <span class="caption-subject font-blue bold uppercase">Actividades Recientes</span>
                                     </div>
-
                                 </div>
                                 <div class="portlet-body">
                                     <div class="" style="position: relative; overflow: scroll; width: auto; height: 300px;">
@@ -387,7 +386,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                    </div><div class="slimScrollBar" style="width: 7px; position: absolute; top: 6px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 161.002px; background: rgb(187, 187, 187);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(234, 234, 234);"></div></div>
+                                    </div>
                                     <div class="scroller-footer">
                                         <div class="btn-arrow-link pull-right">
                                             <a href="javascript:;">See All Records</a>
