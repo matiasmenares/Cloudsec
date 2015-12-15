@@ -46,7 +46,7 @@
 						<!-- BEGIN EXAMPLE TABLE PORTLET-->
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-bug"></i>Vulnerabilidades
+								<i class="fa fa-exchange"></i>Logs
 							</div>
 							<div class="tools">
 								<a href="javascript:;" class="reload">
