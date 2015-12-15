@@ -252,12 +252,11 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-share font-blue"></i>
-                                        <span class="caption-subject font-blue bold uppercase">Recent Activities</span>
+                                        <span class="caption-subject font-blue bold uppercase">Notificaciones</span>
                                     </div>
                                     <div class="actions">
                                         <div class="btn-group">
-                                            <a class="btn btn-sm blue btn-outline btn-circle" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Filter By
-                                                <i class="fa fa-angle-down"></i>
+                                                                               <i class="fa fa-angle-down"></i>
                                             </a>
                                             <div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
                                                 <label>
@@ -325,12 +324,12 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> You have 5 pending membership that requires a quick review. </div>
+                                                            <div class="desc"> Detección de SQLi. </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col2">
-                                                    <div class="date"> 24 mins </div>
+                                                    <div class="date"> 24 min </div>
                                                 </div>
                                             </li>
                                             <li>
@@ -342,14 +341,14 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> New order received with
-                                                                <span class="label label-sm label-success"> Reference Number: DR23923 </span>
+                                                            <div class="desc"> Usuario Bloqueado
+                                                                <span class="label label-sm label-success"> IP: 192.168.1.10 </span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col2">
-                                                    <div class="date"> 30 mins </div>
+                                                    <div class="date"> 30 min </div>
                                                 </div>
                                             </li>
                                             <li>
@@ -361,12 +360,12 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> You have 5 pending membership that requires a quick review. </div>
+                                                            <div class="desc"> Escaneo de puertos detectado. </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col2">
-                                                    <div class="date"> 24 mins </div>
+                                                    <div class="date"> 24 min </div>
                                                 </div>
                                             </li>
                                             <li>
@@ -378,14 +377,14 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> Web server hardware needs to be upgraded.
-                                                                <span class="label label-sm label-default "> Overdue </span>
+                                                            <div class="desc"> Spider detectado.
+                                                                <span class="label label-sm label-default "> Mitigado </span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col2">
-                                                    <div class="date"> 2 hours </div>
+                                                    <div class="date"> 2 horas </div>
                                                 </div>
                                             </li>
                                             <li>
@@ -398,12 +397,12 @@
                                                                 </div>
                                                             </div>
                                                             <div class="cont-col2">
-                                                                <div class="desc"> IPO Report for year 2013 has been released. </div>
+                                                                <div class="desc"> XSS detectado. </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col2">
-                                                        <div class="date"> 20 mins </div>
+                                                        <div class="date"> 20 min </div>
                                                     </div>
                                                 </a>
                                             </li>
@@ -416,7 +415,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> You have 4 pending tasks.
+                                                            <div class="desc"> 4 Bloqueos.
                                                                 <span class="label label-sm label-warning "> Take action
                                                                     <i class="fa fa-share"></i>
                                                                 </span>
@@ -438,7 +437,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="cont-col2">
-                                                                <div class="desc"> Finance Report for year 2013 has been released. </div>
+                                                                <div class="desc"> Posible ataque. </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -706,6 +705,7 @@
             </div>
  
         </div>
+        
         <!-- END PAGE CONTENT-->
     </div>
 </div>

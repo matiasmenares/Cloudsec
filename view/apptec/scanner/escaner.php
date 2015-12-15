@@ -45,7 +45,7 @@
 								<?php for($x=10; $x>=1; $x--){ ?>
 									<tr class="bg-gray">
 										<td class="fit" colspan="3">
-											<a href="javascript:;" class="primary-link">CVE-2015-33-<?php echo $x; ?></a>
+											<a href="bug/detail/" class="primary-link">CVE-2015-33-<?php echo $x; ?></a>
                         				</td>
 										<td> SQli </td>
 										<td> 52.110.55.1</td>
@@ -88,7 +88,7 @@
 	setInterval(function(){ 
 		$('.animated').addClass( 'bg-gray' );
 		$('.animated').removeClass( 'animated' );
-		$('#insertaEscaner').prepend('<tr class="fadeInRight animated"><td class="fit" colspan="3"><div><a href="javascript:;" class="primary-link">CVE-2015-001-'+x+'</a></div></td><td> SQLi </td><td>42.43.33.'+x+'</td><td> CloudSec </td><td> 7.1 </td><td><span class="bold theme-font">detalle</span></td></tr>');
+		$('#insertaEscaner').prepend('<tr class="fadeInRight animated"><td class="fit" colspan="3"><div><a href="bug/detail/" class="primary-link">CVE-2015-001-'+x+'</a></div></td><td> SQLi </td><td>42.43.33.'+x+'</td><td> CloudSec </td><td> 7.1 </td><td><span class="bold theme-font">detalle</span></td></tr>');
 		x++;
 	}, 5000);	
 </script>

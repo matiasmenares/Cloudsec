@@ -57,13 +57,6 @@
                 <span <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="selected"'; ?>></span>
                 </a>
             </li>
-            <li  <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="active"'; ?>>
-                <a href="sucursal/lista/">
-                <i class="fa fa-fire"></i>
-                <span class="title">Firewall</span>
-                <span <?php if($_SESSION['menu']=='lista-sucursal') echo 'class="selected"'; ?>></span>
-                </a>
-            </li>
             <li  <?php if($_SESSION['menu']=='escaner') echo 'class="active"'; ?>>
                 <a href="escaner/">
                 <i class="fa fa-search"></i>

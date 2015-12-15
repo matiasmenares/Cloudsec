@@ -130,10 +130,10 @@
                                             <div class="tabbable-line tabbable-custom-profile">
                                                 <ul class="nav nav-tabs">
                                                     <li class="active">
-                                                        <a href="#tab_1_11" data-toggle="tab" aria-expanded="true"> Latest Customers </a>
+                                                        <a href="#tab_1_11" data-toggle="tab" aria-expanded="true"> Ultimos Reportes </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#tab_1_22" data-toggle="tab" aria-expanded="true"> Feeds </a>
+                                                        <a href="#tab_1_22" data-toggle="tab" aria-expanded="true"> Actividad </a>
                                                     </li>
                                                 </ul>
                                                 <div class="tab-content">

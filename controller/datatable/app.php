@@ -38,7 +38,28 @@
 			    SSP::simple($this->request->get['var1'],$this->request->post, $sql_details, $table, $primaryKey, $columns )
 			);
 		}
-	}				
+	}	
+	
+	public function bug() {
+		
+		if(!empty($this->request->post)){
+			$table = 'vulnerabilidad';
+			 
+			$primaryKey = 'id_vulnerabilidad';
+			 
+			$columns = array(
+			    array( 'db' => 'id_vulnerabilidad', 'dt' => 0 ),
+				array( 'db' => 'nombre_vulnerabilidad', 'dt' => 1 ),
+				array( 'db' => 'codigo_vulnerabilidad', 'dt' => 2 ),
+				array( 'db' => 'gravedad_vulnerabilidad', 'dt' => 3),
+				array( 'db' => 'fecha_vulnerabilidad', 'dt' => 4 )
+			);
+			require( 'ssp/bug.ssp.php' );
+			echo json_encode(
+			    SSP::simple(null,$this->request->post, $sql_details, $table, $primaryKey, $columns )
+			);
+		}
+	}					
 	
 }
 
