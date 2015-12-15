@@ -73,25 +73,10 @@
                 </a>
                 <ul class="sub-menu <?php if($_SESSION['menu']=='lista-orden' OR $_SESSION['menu']=='lista-compra' or $_SESSION['menu']=='lista-distribuir-orden') echo 'open'; ?>" <?php if($_SESSION['menu']=='lista-orden' or $_SESSION['menu']=='lista-distribuir-orden' OR $_SESSION['menu']=='lista-compra') echo 'style="display:block; "'; ?>>
 	                <li <?php if($_SESSION['menu']=='lista-compra') echo 'class="active"'; ?>>
-						<a href="orden/lista/">
+						<a href="log/list/">
                         	<i class="fa fa-angle-double-right"></i>
-							Lista Compras
+							Lista 
 						</a>
-                    </li>
-	                <li <?php if($_SESSION['menu']=='agregar-compra') echo 'class="active"'; ?>>
-                        <a href="orden/directa/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Compras Directas</a>
-                    </li>
-                    <li <?php if($_SESSION['menu']=='lista-orden') echo 'class="active"'; ?>>
-                        <a href="lista-orden/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Ordenes de Compra</a>
-                    </li>
-                    <li <?php if($_SESSION['menu']=='lista-distribuir-orden') echo 'class="active"'; ?>>
-                        <a href="orden/lista-distribucion/">
-                        <i class="fa fa-angle-double-right"></i>
-                        Distribución de Productos</a>
                     </li>
 				</ul>
             </li>

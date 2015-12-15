@@ -1,6 +1,6 @@
 <?php
 	
- class ApirestPos extends Controller {
+ class ApirestApp extends Controller {
 	
 		
 	public function index() {
@@ -11,11 +11,11 @@
 		
 		$this->response->setOutput("error no instance to Api");
 	
-		$this->render(TEMPLATE."api/api.php");
+		$this->render("api/api.php");
 		
 	}
 	
-	public function vender(){
+	public function access(){
 		
 		$this->noHeader();	
 
@@ -29,18 +29,11 @@
 			
 			if($auth == true){
 				
-				$producto = $this->load->model("Producto");
+				$log = $this->load->model("Log");
 				
-				$venta = $this->load->model("Venta");
+				$save = $log->save($this->request->post);
 				
-				$producto = $producto->detalleProductoOc($this->request->post['product_id']);
-				
-				$id_compra = $venta->precioCompraProducto($producto['id_producto'],1);
-				
-				$editar_stock = $venta->descontarStockPrecioCompra($producto['id_producto'],$id_compra['id_producto_precio_compra'],$this->request->post['quantity'],$this->request->post['id_sucursal']);
-				
-				
-				if($editar_stock == true){
+				if($save == true){
 					
 					$json["response"] = "true";
 					
@@ -61,7 +54,7 @@
 
 		}
 		
-		$this->render(TEMPLATE."api/api.php");
+		$this->render("api/api.php");
 				
 	}
 

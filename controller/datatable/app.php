@@ -59,7 +59,28 @@
 			    SSP::simple(null,$this->request->post, $sql_details, $table, $primaryKey, $columns )
 			);
 		}
-	}					
+	}
+	
+	public function LogList() {
+		
+		if(!empty($this->request->post)){
+			$table = 'log_sistema';
+			 
+			$primaryKey = 'id_log_sistema';
+			 
+			$columns = array(
+			    array( 'db' => 'id_log_sistema', 'dt' => 0 ),
+				array( 'db' => 'ip', 'dt' => 1 ),
+				array( 'db' => 'nombre_navegador', 'dt' => 2 ),
+				array( 'db' => 'nombre_ciudad', 'dt' => 3),
+				array( 'db' => 'fecha_log_sistema', 'dt' => 4 )
+			);
+			require( 'ssp/log.ssp.php' );
+			echo json_encode(
+			    SSP::simple(null,$this->request->post, $sql_details, $table, $primaryKey, $columns )
+			);
+		}
+	}						
 	
 }
 
