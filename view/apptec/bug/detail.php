@@ -84,628 +84,978 @@
             </div>
         </div>
         <!-- END PAGE HEADER-->
-        <!-- BEGIN PAGE CONTENT-->
-        <div class="row">
-            <div class="col-md-12">
-	            <div class="col-md-3">
-	            	<div class="portlet light profile-sidebar-portlet ">
-                                    <!-- SIDEBAR USERPIC -->
-						<div class="profile-userpic">
-							<img src="image/img-app/app.png" class="img-responsive" alt=""> </div>
-                                    <!-- END SIDEBAR USERPIC -->
-                                    <!-- SIDEBAR USER TITLE -->
-							<div class="profile-usertitle">
-							<div class="profile-usertitle-name"> <?php ?> CVE-2015-002 </div>
-						</div>
-						<!-- END SIDEBAR USER TITLE -->
-						<!-- SIDEBAR MENU -->
-						<div class="profile-usermenu">
-                                        <ul class="nav">
-                                            <li class="active">
-                                                <a href="page_user_profile_1.html">
-                                                    <i class="icon-home"></i> Dashboard </a>
-                                            </li>
-                                            <li>
-                                                <a href="page_user_profile_1_account.html">
-                                                    <i class="icon-settings"></i> Ajustes </a>
-                                            </li>
-											<li>
-                                                <a href="page_user_profile_1_account.html">
-                                                    <i class="fa fa-search"></i> Scanner </a>
-                                            </li>
-											<li>
-                                                <a href="page_user_profile_1_help.html">
-                                                    <i class="icon-info"></i> Ayuda </a>
-                                            </li>
-                                        </ul>
-						</div>
-						<!-- END MENU -->
-					</div>
-					<div class="portlet light ">
-                                    <!-- STAT -->
-                                    <div class="row list-separated profile-stat">
-                                        <div class="col-md-4 col-sm-4 col-xs-6">
-                                            <div class="uppercase profile-stat-title"> 37 </div>
-                                            <div class="uppercase profile-stat-text"> Reportes </div>
+      <!--Pagina-->
+      <div class="tab-content portlet light ">
+                                <div class="tab-pane active" id="tab_1_1">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <ul class="list-unstyled profile-nav">
+                                                <li>
+                                                    <img src="image/img-app/bug.png" class="img-responsive pic-bordered" alt="">
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-6">
-                                            <div class="uppercase profile-stat-title"> 51 </div>
-                                            <div class="uppercase profile-stat-text"> Mitigado </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-6">
-                                            <div class="uppercase profile-stat-title"> 61 </div>
-                                            <div class="uppercase profile-stat-text"> Detectado </div>
-                                        </div>
-                                    </div>
-                                    <!-- END STAT -->
-                                        <h4 class="profile-desc-title">Detalle</h4>
-                                        <span class="profile-desc-text"> <?php  ?> </span>
-                                        <div class="margin-top-20 profile-desc-link">
-                                            <i class="fa fa-globe"></i>
-                                            <a href="http://www.keenthemes.com"> <?php ?></a>
-                                        </div>
-                                        <div class="margin-top-20 profile-desc-link">
-                                            <i class="fa fa-envelope"></i>
-                                            <a href="http://www.twitter.com/keenthemes/"><?php  ?></a>
-                                        </div>
-                                    </div>
-                                </div>
-						<div class="col-md-9">
-<div class="portlet light ">
-                                            <div class="portlet-title tabbable-line">
-                                                <div class="caption caption-md">
-                                                    <i class="icon-globe theme-font hide"></i>
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <!--end col-md-8-->
+                                                <div class="col-md-4">
+                                                    <div class="portlet sale-summary">
+                                                        <div class="portlet-title">
+                                                            <div class="caption font-red sbold"> CVE-2015-003 </div>
+                                                            <div class="tools">
+                                                                <a class="reload" href="javascript:;" data-original-title="" title=""> </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="portlet-body">
+                                                            <ul class="list-unstyled">
+                                                                <li>
+                                                                    <span class="sale-info"> Detecciones
+                                                                        <i class="fa fa-img-up"></i>
+                                                                    </span>
+                                                                    <span class="sale-num"> 23 </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="sale-info"> Mitigaciones
+                                                                        <i class="fa fa-img-down"></i>
+                                                                    </span>
+                                                                    <span class="sale-num"> 87 </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                                <!--end col-md-4-->
+                                            </div>
+                                            <!--end row-->
+                                            <div class="tabbable-line tabbable-custom-profile">
                                                 <ul class="nav nav-tabs">
                                                     <li class="active">
-                                                        <a href="#tab_1_1" data-toggle="tab">General</a>
+                                                        <a href="#tab_1_11" data-toggle="tab" aria-expanded="true"> Latest Customers </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#tab_1_2" data-toggle="tab">Notificaciones</a>
-                                                    </li>
-													<li>
-                                                        <a href="#tab_1_3" data-toggle="tab">Logs</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#tab_1_4" data-toggle="tab">Mapa</a>
-                                                    </li>
-													<li>
-                                                        <a href="#tab_1_5" data-toggle="tab">Servicios</a>
-                                                    </li>
-													<li>
-                                                        <a href="#tab_1_6" data-toggle="tab">Configuración</a>
+                                                        <a href="#tab_1_22" data-toggle="tab" aria-expanded="true"> Feeds </a>
                                                     </li>
                                                 </ul>
-                                            </div>
-                                            <div class="portlet-body">
                                                 <div class="tab-content">
-                                                    <!-- GENERAL QUESTION TAB -->
-                                                    <div class="tab-pane active" id="tab_1_1">
-                                                        <div id="accordion1" class="panel-group">
-                                                            <div class="panel">
-                                                                <div class="">
-	                                                                <div class="col-md-12">
-		                                                                <div class="col-md-4">
-																		<!-- BEGIN WIDGET THUMB -->
-											                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
-											                                <h4 class="widget-thumb-heading">Ataques</h4>
-											                                <div class="widget-thumb-wrap">
-											                                    <i class="widget-thumb-icon bg-red fa fa-bug"></i>
-											                                    <div class="widget-thumb-body">
-											                                        <span class="widget-thumb-subtitle"></span>
-											                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">3</span>
-											                                    </div>
-											                                </div>
-											                            </div>
-										                            <!-- END WIDGET THUMB -->
-		                                                                </div>
-		                                                                <div class="col-md-4">
-																		<!-- BEGIN WIDGET THUMB -->
-											                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
-											                                <h4 class="widget-thumb-heading">Request</h4>
-											                                <div class="widget-thumb-wrap">
-																			<i class="widget-thumb-icon bg-blue icon-layers"></i>											                                  									  <div class="widget-thumb-body">
-											                                        <span class="widget-thumb-subtitle"></span>
-											                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">7.644</span>
-											                                    </div>
-											                                </div>
-											                            </div>
-										                            <!-- END WIDGET THUMB -->
-		                                                                </div>
-		                                                                <div class="col-md-4">
-																		<!-- BEGIN WIDGET THUMB -->
-											                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
-											                                <h4 class="widget-thumb-heading">Bloqueos</h4>
-											                                <div class="widget-thumb-wrap">
-											                                    <i class="widget-thumb-icon bg-green fa fa-shield"></i>
-											                                    <div class="widget-thumb-body">
-											                                        <span class="widget-thumb-subtitle"></span>
-											                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">20</span>
-											                                    </div>
-											                                </div>
-											                            </div>
-										                            <!-- END WIDGET THUMB -->
-		                                                                </div>
-	                                                                </div>
-	                                                            	<div class="col-md-6">
-		                                                            	 <div class="portlet-body">
-																		 	<canvas id="myChart" width="400" height="280"></canvas>
-																		</div>
-	                                                            	</div>
-																	<div class="col-md-6">
-		                                                            	 <div class="portlet-body">
-																		 	<canvas id="myChart2" width="400" height="280"></canvas>
-																		</div>
-	                                                            	</div>
-																	<div id="site_statistics_content" class="display-none" style="display: block;">
-																		<div id="chartdiv" style="width	: 100%;height: 500px;"></div>
-																	</div>
-                                                                </div>
-                                                            </div>
+                                                    <div class="tab-pane active" id="tab_1_11">
+                                                        <div class="portlet-body">
+                                                            <table class="table table-striped table-bordered table-advance table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>
+                                                                            <i class="fa fa-briefcase"></i> Company </th>
+                                                                        <th class="hidden-xs">
+                                                                            <i class="fa fa-question"></i> Descrition </th>
+                                                                        <th>
+                                                                            <i class="fa fa-bookmark"></i> Amount </th>
+                                                                        <th> </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="javascript:;"> Pixel Ltd </a>
+                                                                        </td>
+                                                                        <td class="hidden-xs"> Server hardware purchase </td>
+                                                                        <td> 52560.10$
+                                                                            <span class="label label-success label-sm"> Paid </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="javascript:;"> Smart House </a>
+                                                                        </td>
+                                                                        <td class="hidden-xs"> Office furniture purchase </td>
+                                                                        <td> 5760.00$
+                                                                            <span class="label label-warning label-sm"> Pending </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="javascript:;"> FoodMaster Ltd </a>
+                                                                        </td>
+                                                                        <td class="hidden-xs"> Company Anual Dinner Catering </td>
+                                                                        <td> 12400.00$
+                                                                            <span class="label label-success label-sm"> Paid </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="javascript:;"> WaterPure Ltd </a>
+                                                                        </td>
+                                                                        <td class="hidden-xs"> Payment for Jan 2013 </td>
+                                                                        <td> 610.50$
+                                                                            <span class="label label-danger label-sm"> Overdue </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="javascript:;"> Pixel Ltd </a>
+                                                                        </td>
+                                                                        <td class="hidden-xs"> Server hardware purchase </td>
+                                                                        <td> 52560.10$
+                                                                            <span class="label label-success label-sm"> Paid </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="javascript:;"> Smart House </a>
+                                                                        </td>
+                                                                        <td class="hidden-xs"> Office furniture purchase </td>
+                                                                        <td> 5760.00$
+                                                                            <span class="label label-warning label-sm"> Pending </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="javascript:;"> FoodMaster Ltd </a>
+                                                                        </td>
+                                                                        <td class="hidden-xs"> Company Anual Dinner Catering </td>
+                                                                        <td> 12400.00$
+                                                                            <span class="label label-success label-sm"> Paid </span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
                                                     </div>
-                                                    <!-- END GENERAL QUESTION TAB -->
-    <!-- TERMS OF USE TAB -->
-					<div class="tab-pane" id="tab_1_2">
-						<div class="portlet light bordered">
-                                <div class="portlet-title">
-                                    <div class="caption">
-                                        <i class="icon-share font-blue"></i>
-                                        <span class="caption-subject font-blue bold uppercase">Recent Activities</span>
-                                    </div>
-                                    <div class="actions">
-                                        <div class="btn-group">
-                                            <a class="btn btn-sm blue btn-outline btn-circle" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Filter By
-                                                <i class="fa fa-angle-down"></i>
-                                            </a>
-                                            <div class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
-                                                <label>
-                                                    <div class="checker"><span><input type="checkbox"></span></div> Finance</label>
-                                                <label>
-                                                    <div class="checker"><span class="checked"><input type="checkbox" checked=""></span></div> Membership</label>
-                                                <label>
-                                                    <div class="checker"><span><input type="checkbox"></span></div> Customer Support</label>
-                                                <label>
-                                                    <div class="checker"><span class="checked"><input type="checkbox" checked=""></span></div> HR</label>
-                                                <label>
-                                                    <div class="checker"><span><input type="checkbox"></span></div> System</label>
+                                                    <!--tab-pane-->
+                                                    <div class="tab-pane" id="tab_1_22">
+                                                        <div class="tab-pane active" id="tab_1_1_1">
+                                                            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 290px;"><div class="scroller" data-height="290px" data-always-visible="1" data-rail-visible1="1" style="overflow: hidden; width: auto; height: 290px;" data-initialized="1">
+                                                                <ul class="feeds">
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-success">
+                                                                                        <i class="fa fa-bell-o"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> You have 4 pending tasks.
+                                                                                        <span class="label label-danger label-sm"> Take action
+                                                                                            <i class="fa fa-share"></i>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> Just now </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:;">
+                                                                            <div class="col1">
+                                                                                <div class="cont">
+                                                                                    <div class="cont-col1">
+                                                                                        <div class="label label-success">
+                                                                                            <i class="fa fa-bell-o"></i>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="cont-col2">
+                                                                                        <div class="desc"> New version v1.4 just lunched! </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col2">
+                                                                                <div class="date"> 20 mins </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-danger">
+                                                                                        <i class="fa fa-bolt"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> Database server #12 overloaded. Please fix the issue. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 24 mins </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-info">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 30 mins </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-success">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 40 mins </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-warning">
+                                                                                        <i class="fa fa-plus"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New user registered. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 1.5 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-success">
+                                                                                        <i class="fa fa-bell-o"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> Web server hardware needs to be upgraded.
+                                                                                        <span class="label label-inverse label-sm"> Overdue </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 2 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-default">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 3 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-warning">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 5 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-info">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 18 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-default">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 21 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-info">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 22 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-default">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 21 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-info">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 22 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-default">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 21 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-info">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 22 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-default">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 21 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col1">
+                                                                            <div class="cont">
+                                                                                <div class="cont-col1">
+                                                                                    <div class="label label-info">
+                                                                                        <i class="fa fa-bullhorn"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="cont-col2">
+                                                                                    <div class="desc"> New order received. Please take care of it. </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col2">
+                                                                            <div class="date"> 22 hours </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div><div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; background: rgb(187, 187, 187);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(234, 234, 234);"></div></div>
+                                                        </div>
+                                                    </div>
+                                                    <!--tab-pane-->
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="portlet-body">
-                                    <div class="" style="position: relative; overflow: scroll; width: auto; height: 300px;">
-                                        <ul class="feeds">
-                                            <li>
-                                                <div class="col1">
-                                                    <div class="cont">
-                                                        <div class="cont-col1">
-                                                            <div class="label label-sm label-info">
-                                                                <i class="fa fa-check"></i>
-                                                            </div>
+                                <!--tab_1_2-->
+                                <div class="tab-pane" id="tab_1_3">
+                                    <div class="row profile-account">
+                                        <div class="col-md-3">
+                                            <ul class="ver-inline-menu tabbable margin-bottom-10">
+                                                <li class="active">
+                                                    <a data-toggle="tab" href="#tab_1-1" aria-expanded="false">
+                                                        <i class="fa fa-cog"></i> Personal info </a>
+                                                    <span class="after"> </span>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#tab_2-2" aria-expanded="false">
+                                                        <i class="fa fa-picture-o"></i> Change Avatar </a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#tab_3-3" aria-expanded="false">
+                                                        <i class="fa fa-lock"></i> Change Password </a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#tab_4-4" aria-expanded="false">
+                                                        <i class="fa fa-eye"></i> Privacity Settings </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="tab-content">
+                                                <div id="tab_1-1" class="tab-pane active">
+                                                    <form role="form" action="#">
+                                                        <div class="form-group">
+                                                            <label class="control-label">First Name</label>
+                                                            <input type="text" placeholder="John" class="form-control"> </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label">Last Name</label>
+                                                            <input type="text" placeholder="Doe" class="form-control"> </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label">Mobile Number</label>
+                                                            <input type="text" placeholder="+1 646 580 DEMO (6284)" class="form-control"> </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label">Interests</label>
+                                                            <input type="text" placeholder="Design, Web etc." class="form-control"> </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label">Occupation</label>
+                                                            <input type="text" placeholder="Web Developer" class="form-control"> </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label">About</label>
+                                                            <textarea class="form-control" rows="3" placeholder="We are KeenThemes!!!"></textarea>
                                                         </div>
-                                                        <div class="cont-col2">
-                                                            <div class="desc"> 1 Bloqueos.
-                                                                <span class="label label-sm label-warning "> Detalle                                                                     <i class="fa fa-share"></i>
-                                                                </span>
-                                                            </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label">Website Url</label>
+                                                            <input type="text" placeholder="http://www.mywebsite.com" class="form-control"> </div>
+                                                        <div class="margiv-top-10">
+                                                            <a href="javascript:;" class="btn green"> Save Changes </a>
+                                                            <a href="javascript:;" class="btn default"> Cancel </a>
                                                         </div>
-                                                    </div>
+                                                    </form>
                                                 </div>
-                                                <div class="col2">
-                                                    <div class="date"> 2 min. </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <div class="col1">
-                                                        <div class="cont">
-                                                            <div class="cont-col1">
-                                                                <div class="label label-sm label-success">
-                                                                    <i class="fa fa-bar-chart-o"></i>
+                                                <div id="tab_2-2" class="tab-pane">
+                                                    <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                        </p>
+                                                    <form action="#" role="form">
+                                                        <div class="form-group">
+                                                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                                <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                                                    <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt=""> </div>
+                                                                <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
+                                                                <div>
+                                                                    <span class="btn default btn-file">
+                                                                        <span class="fileinput-new"> Select image </span>
+                                                                        <span class="fileinput-exists"> Change </span>
+                                                                        <input type="file" name="..."> </span>
+                                                                    <a href="javascript:;" class="btn default fileinput-exists" data-dismiss="fileinput"> Remove </a>
                                                                 </div>
                                                             </div>
-                                                            <div class="cont-col2">
-                                                                <div class="desc"> 1 Alerta. </div>
+                                                            <div class="clearfix margin-top-10">
+                                                                <span class="label label-danger"> NOTE! </span>
+                                                                <span> Attached image thumbnail is supported in Latest Firefox, Chrome, Opera, Safari and Internet Explorer 10 only </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="margin-top-10">
+                                                            <a href="javascript:;" class="btn green"> Submit </a>
+                                                            <a href="javascript:;" class="btn default"> Cancel </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div id="tab_3-3" class="tab-pane">
+                                                    <form action="#">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Current Password</label>
+                                                            <input type="password" class="form-control"> </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label">New Password</label>
+                                                            <input type="password" class="form-control"> </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label">Re-type New Password</label>
+                                                            <input type="password" class="form-control"> </div>
+                                                        <div class="margin-top-10">
+                                                            <a href="javascript:;" class="btn green"> Change Password </a>
+                                                            <a href="javascript:;" class="btn default"> Cancel </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div id="tab_4-4" class="tab-pane">
+                                                    <form action="#">
+                                                        <table class="table table-bordered table-striped">
+                                                            <tbody><tr>
+                                                                <td> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus.. </td>
+                                                                <td>
+                                                                    <label class="uniform-inline">
+                                                                        <div class="radio"><span><input type="radio" name="optionsRadios1" value="option1"></span></div> Yes </label>
+                                                                    <label class="uniform-inline">
+                                                                        <div class="radio"><span class="checked"><input type="radio" name="optionsRadios1" value="option2" checked=""></span></div> No </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Enim eiusmod high life accusamus terry richardson ad squid wolf moon </td>
+                                                                <td>
+                                                                    <label class="uniform-inline">
+                                                                        <div class="checker"><span><input type="checkbox" value=""></span></div> Yes </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Enim eiusmod high life accusamus terry richardson ad squid wolf moon </td>
+                                                                <td>
+                                                                    <label class="uniform-inline">
+                                                                        <div class="checker"><span><input type="checkbox" value=""></span></div> Yes </label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Enim eiusmod high life accusamus terry richardson ad squid wolf moon </td>
+                                                                <td>
+                                                                    <label class="uniform-inline">
+                                                                        <div class="checker"><span><input type="checkbox" value=""></span></div> Yes </label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                        <!--end profile-settings-->
+                                                        <div class="margin-top-10">
+                                                            <a href="javascript:;" class="btn green"> Save Changes </a>
+                                                            <a href="javascript:;" class="btn default"> Cancel </a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end col-md-9-->
+                                    </div>
+                                </div>
+                                <!--end tab-pane-->
+                                <div class="tab-pane" id="tab_1_6">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <ul class="ver-inline-menu tabbable margin-bottom-10">
+                                                <li class="active">
+                                                    <a data-toggle="tab" href="#tab_1">
+                                                        <i class="fa fa-briefcase"></i> General Questions </a>
+                                                    <span class="after"> </span>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#tab_2">
+                                                        <i class="fa fa-group"></i> Membership </a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#tab_3">
+                                                        <i class="fa fa-leaf"></i> Terms Of Service </a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#tab_1">
+                                                        <i class="fa fa-info-circle"></i> License Terms </a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#tab_2">
+                                                        <i class="fa fa-tint"></i> Payment Rules </a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#tab_3">
+                                                        <i class="fa fa-plus"></i> Other Questions </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="tab-content">
+                                                <div id="tab_1" class="tab-pane active">
+                                                    <div id="accordion1" class="panel-group">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_1"> 1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion1_1" class="panel-collapse collapse in">
+                                                                <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                                                    laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                                                    anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                                                                    heard of them accusamus labore sustainable VHS. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_2"> 2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion1_2" class="panel-collapse collapse">
+                                                                <div class="panel-body"> Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Anim pariatur cliche reprehenderit,
+                                                                    enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                                                    VHS. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-success">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_3"> 3. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion1_3" class="panel-collapse collapse">
+                                                                <div class="panel-body"> Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Anim pariatur cliche reprehenderit,
+                                                                    enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                                                    VHS. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-warning">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_4"> 4. Wolf moon officia aute, non cupidatat skateboard dolor brunch ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion1_4" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-danger">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_5"> 5. Leggings occaecat craft beer farm-to-table, raw denim aesthetic ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion1_5" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                                                    wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_6"> 6. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion1_6" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                                                    wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_7"> 7. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion1_7" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                                                    wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col2">
-                                                        <div class="date"> 20 min. </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <div class="col1">
-                                                    <div class="cont">
-                                                        <div class="cont-col1">
-                                                            <div class="label label-sm label-danger">
-                                                                <i class="fa fa-user"></i>
+                                                </div>
+                                                <div id="tab_2" class="tab-pane">
+                                                    <div id="accordion2" class="panel-group">
+                                                        <div class="panel panel-warning">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_1"> 1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ? </a>
+                                                                </h4>
                                                             </div>
-                                                        </div>
-                                                        <div class="cont-col2">
-                                                            <div class="desc"> You have 5 pending membership that requires a quick review. </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col2">
-                                                    <div class="date"> 24 mins </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col1">
-                                                    <div class="cont">
-                                                        <div class="cont-col1">
-                                                            <div class="label label-sm label-info">
-                                                                <i class="fa fa-shopping-cart"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cont-col2">
-                                                            <div class="desc"> New order received with
-                                                                <span class="label label-sm label-success"> Reference Number: DR23923 </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col2">
-                                                    <div class="date"> 30 mins </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col1">
-                                                    <div class="cont">
-                                                        <div class="cont-col1">
-                                                            <div class="label label-sm label-success">
-                                                                <i class="fa fa-user"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cont-col2">
-                                                            <div class="desc"> You have 5 pending membership that requires a quick review. </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col2">
-                                                    <div class="date"> 24 mins </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col1">
-                                                    <div class="cont">
-                                                        <div class="cont-col1">
-                                                            <div class="label label-sm label-default">
-                                                                <i class="fa fa-bell-o"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cont-col2">
-                                                            <div class="desc"> Web server hardware needs to be upgraded.
-                                                                <span class="label label-sm label-default "> Overdue </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col2">
-                                                    <div class="date"> 2 hours </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <div class="col1">
-                                                        <div class="cont">
-                                                            <div class="cont-col1">
-                                                                <div class="label label-sm label-default">
-                                                                    <i class="fa fa-briefcase"></i>
+                                                            <div id="accordion2_1" class="panel-collapse collapse in">
+                                                                <div class="panel-body">
+                                                                    <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                                        haven't heard of them accusamus labore sustainable VHS. </p>
+                                                                    <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                                        haven't heard of them accusamus labore sustainable VHS. </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="cont-col2">
-                                                                <div class="desc"> IPO Report for year 2013 has been released. </div>
+                                                        </div>
+                                                        <div class="panel panel-danger">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_2"> 2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion2_2" class="panel-collapse collapse">
+                                                                <div class="panel-body"> Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Anim pariatur cliche reprehenderit,
+                                                                    enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                                                    VHS. </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col2">
-                                                        <div class="date"> 20 mins </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <div class="col1">
-                                                    <div class="cont">
-                                                        <div class="cont-col1">
-                                                            <div class="label label-sm label-info">
-                                                                <i class="fa fa-check"></i>
+                                                        <div class="panel panel-success">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_3"> 3. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion2_3" class="panel-collapse collapse">
+                                                                <div class="panel-body"> Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Anim pariatur cliche reprehenderit,
+                                                                    enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                                                    VHS. </div>
                                                             </div>
                                                         </div>
-                                                        <div class="cont-col2">
-                                                            <div class="desc"> You have 4 pending tasks.
-                                                                <span class="label label-sm label-warning "> Take action
-                                                                    <i class="fa fa-share"></i>
-                                                                </span>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_4"> 4. Wolf moon officia aute, non cupidatat skateboard dolor brunch ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion2_4" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_5"> 5. Leggings occaecat craft beer farm-to-table, raw denim aesthetic ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion2_5" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                                                    wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_6"> 6. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion2_6" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                                                    wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_7"> 7. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion2_7" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                                                    wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col2">
-                                                    <div class="date"> Just now </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <div class="col1">
-                                                        <div class="cont">
-                                                            <div class="cont-col1">
-                                                                <div class="label label-sm label-danger">
-                                                                    <i class="fa fa-bar-chart-o"></i>
+                                                <div id="tab_3" class="tab-pane">
+                                                    <div id="accordion3" class="panel-group">
+                                                        <div class="panel panel-danger">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#accordion3_1"> 1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion3_1" class="panel-collapse collapse in">
+                                                                <div class="panel-body">
+                                                                    <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
+                                                                    <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
+                                                                    <p> Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                                                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                                                        you probably haven't heard of them accusamus labore sustainable VHS. </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="cont-col2">
-                                                                <div class="desc"> Finance Report for year 2013 has been released. </div>
+                                                        </div>
+                                                        <div class="panel panel-success">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#accordion3_2"> 2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion3_2" class="panel-collapse collapse">
+                                                                <div class="panel-body"> Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Anim pariatur cliche reprehenderit,
+                                                                    enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                                                    VHS. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#accordion3_3"> 3. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion3_3" class="panel-collapse collapse">
+                                                                <div class="panel-body"> Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Anim pariatur cliche reprehenderit,
+                                                                    enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                                                    VHS. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#accordion3_4"> 4. Wolf moon officia aute, non cupidatat skateboard dolor brunch ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion3_4" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#accordion3_5"> 5. Leggings occaecat craft beer farm-to-table, raw denim aesthetic ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion3_5" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                                                    wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#accordion3_6"> 6. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion3_6" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                                                    wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#accordion3_7"> 7. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft ? </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="accordion3_7" class="panel-collapse collapse">
+                                                                <div class="panel-body"> 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                                                    wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col2">
-                                                        <div class="date"> 20 mins </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <div class="col1">
-                                                    <div class="cont">
-                                                        <div class="cont-col1">
-                                                            <div class="label label-sm label-default">
-                                                                <i class="fa fa-user"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cont-col2">
-                                                            <div class="desc"> You have 5 pending membership that requires a quick review. </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
-                                                <div class="col2">
-                                                    <div class="date"> 24 mins </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col1">
-                                                    <div class="cont">
-                                                        <div class="cont-col1">
-                                                            <div class="label label-sm label-info">
-                                                                <i class="fa fa-shopping-cart"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cont-col2">
-                                                            <div class="desc"> New order received with
-                                                                <span class="label label-sm label-success"> Reference Number: DR23923 </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col2">
-                                                    <div class="date"> 30 mins </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col1">
-                                                    <div class="cont">
-                                                        <div class="cont-col1">
-                                                            <div class="label label-sm label-success">
-                                                                <i class="fa fa-user"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cont-col2">
-                                                            <div class="desc"> You have 5 pending membership that requires a quick review. </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col2">
-                                                    <div class="date"> 24 mins </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col1">
-                                                    <div class="cont">
-                                                        <div class="cont-col1">
-                                                            <div class="label label-sm label-warning">
-                                                                <i class="fa fa-bell-o"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cont-col2">
-                                                            <div class="desc"> Web server hardware needs to be upgraded.
-                                                                <span class="label label-sm label-default "> Overdue </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col2">
-                                                    <div class="date"> 2 hours </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">
-                                                    <div class="col1">
-                                                        <div class="cont">
-                                                            <div class="cont-col1">
-                                                                <div class="label label-sm label-info">
-                                                                    <i class="fa fa-briefcase"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="cont-col2">
-                                                                <div class="desc"> IPO Report for year 2013 has been released. </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col2">
-                                                        <div class="date"> 20 mins </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div><div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 161.002px; background: rgb(187, 187, 187);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(234, 234, 234);"></div></div>
-                                    <div class="scroller-footer">
-                                        <div class="btn-arrow-link pull-right">
-                                            <a href="javascript:;">See All Records</a>
-                                            <i class="icon-arrow-right"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!--end tab-pane-->
                             </div>
-                                                    </div>
-                                                    <!-- END TERMS OF USE TAB -->
-													<!-- TERMS OF USE TAB -->
-                                                    <div class="tab-pane" id="tab_1_3">
-                                                        <div id="accordion3" class="panel-group">
-															<div class="portlet-body">
-																<table class="table table-striped table-bordered table-hover" id="access">
-																	<thead>
-																		<tr>
-																			<th>
-																				ID
-																			</th>
-																			<th>
-																				Nombre
-																			</th>
-																			<th>
-																				Lenguaje
-																			</th>
-																			<th>
-																				IP
-																			</th>
-																			<th>
-																				Estado
-																			</th>
-																			<th width="50px">
-																				Accion
-																			</th>
-																		</tr>																
-																	</thead>
-																<tbody>
-																</tbody>
-																</table>
-														</div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END TERMS OF USE TAB -->
-                                                    <!-- TERMS OF USE TAB -->
-                                                    <div class="tab-pane" id="tab_1_4">
-                                                        <div id="accordion3" class="panel-group">
-															<div class="panel-heading">
-                                                              <table>
-															  		<tr>
-																	  <div id="mapdiv" style="width: 100%; background-color:#eeeeee; height: 400px;"></div>
-																	</tr>
-                                                              </table>
-															</div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END TERMS OF USE TAB -->
-                                                      <!-- SERVICIOS TAB -->
-                                                    <div class="tab-pane" id="tab_1_5">
-                                                        <div id="accordion2" class="panel-group">
-															<table class="table table-hover table-light">
-						                                            <thead>
-						                                                <tr class="uppercase">
-						                                                    <th> # </th>
-						                                                    <th> Servicio </th>
-						                                                    <th> Carpeta </th>
-						                                                    <th> Status </th>
-						                                                    <th> Acción </th>
-						                                                </tr>
-						                                            </thead>
-						                                            <tbody>
-						                                                <tr>
-						                                                    <td> 1 </td>
-						                                                    <th> Apache </th>
-						                                                    <th> /etc/httpd/apache/ </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                                <tr>
-						                                                    <td> 2 </td>
-						                                                    <th> OpenSSL </th>
-						                                                    <th> /etc/httpd/apache/ </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                                <tr>
-						                                                    <td> 3 </td>
-						                                                    <th> Mail </th>
-						                                                    <th> /etc/httpd/apache/ </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                                <tr>
-						                                                    <td> 4 </td>
-						                                                    <th> MySQL </th>
-						                                                    <th> /etc/httpd/apache/ </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                            </tbody>
-						                                        </table>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END MEMBERSHIP TAB -->
-													<!-- TERMS OF USE TAB -->
-                                                    <div class="tab-pane" id="tab_1_6">
-                                                        <div id="accordion3" class="panel-group">
-															<table class="table table-hover table-light">
-						                                            <thead>
-						                                                <tr class="uppercase">
-						                                                    <th> Servicio </th>
-						                                                    <th> Status </th>
-						                                                    <th> Acción </th>
-						                                                </tr>
-						                                            </thead>
-						                                            <tbody>
-						                                                <tr>
-						                                                    <th colspan="2"> Bloqueo Automático </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                                <tr>
-						                                                    <th colspan="2"> Registro de Log </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                                <tr>
-						                                                    <th colspan="2"> Alertas </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                                <tr>
-						                                                    <th colspan="2"> MySQL </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                            </tbody>
-						                                        </table>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END TERMS OF USE TAB -->
-
-                                                </div>
-                                            </div>
-                                        </div>
-            		</div>
-				</div>
-            </div>
- 
-        </div>
-        <!-- END PAGE CONTENT-->
+      <!---END PAGE CONTENT-->
     </div>
 </div>
 </body>
