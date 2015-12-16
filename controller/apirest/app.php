@@ -57,6 +57,51 @@
 		$this->render("api/api.php");
 				
 	}
+	
+	public function block(){
+		
+		$this->noHeader();	
+
+		$this->response->addHeader('Content-Type: application/json');
+
+		if(!empty($this->request->post)){
+			
+			$api = $this->load->model("Api");
+			
+			$auth = $api->authe($this->request->post['user'],$this->request->post['hash']);
+			
+			if($auth == true){
+				
+				$block = $this->load->model("Block");
+				
+				$isblock = $block->getBlock($this->request->post);
+				
+				if($isblock == true){
+					
+					$json["response"] = "true";
+					
+					$this->response->setOutput(json_encode($json));
+					
+				}
+				
+				
+			}else{
+				
+				$this->response->setOutput("Error Auth");
+				
+			}
+
+		}else{
+			
+			$this->response->setOutput("Error No Request");
+
+		}
+		
+		$this->render("api/api.php");
+				
+	}
+	
+	
 
 }
 ?>

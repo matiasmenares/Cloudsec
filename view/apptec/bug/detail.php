@@ -161,11 +161,11 @@
                                                                 <thead>
                                                                     <tr>
                                                                         <th>
-                                                                            <i class="fa fa-briefcase"></i> Aplicación </th>
+                                                                            <i class="fa fa-rocket"></i> Aplicación </th>
                                                                         <th class="hidden-xs">
-                                                                            <i class="fa fa-question"></i> Descripción </th>
+                                                                            <i class="fa fa-info"></i> Descripción </th>
                                                                         <th>
-                                                                            <i class="fa fa-bookmark"></i> Fecha </th>
+                                                                            <i class="fa fa-calendar"></i> Fecha </th>
                                                                         <th> </th>
                                                                     </tr>
                                                                 </thead>
