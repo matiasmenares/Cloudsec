@@ -101,7 +101,7 @@
                                                 <div class="col-md-4">
                                                     <div class="portlet sale-summary">
                                                         <div class="portlet-title">
-                                                            <div class="caption font-red sbold"> CVE-2015-003 </div>
+                                                            <div class="caption font-red sbold"> <?php echo $bug['codigo_vulnerabilidad']; ?></div>
                                                             <div class="tools">
                                                                 <a class="reload" href="javascript:;" data-original-title="" title=""> </a>
                                                             </div>
@@ -112,13 +112,13 @@
                                                                     <span class="sale-info"> Detecciones
                                                                         <i class="fa fa-img-up"></i>
                                                                     </span>
-                                                                    <span class="sale-num"> 23 </span>
+                                                                    <span class="sale-num"> <?php echo rand(5, 100); ?> </span>
                                                                 </li>
                                                                 <li>
                                                                     <span class="sale-info"> Mitigaciones
                                                                         <i class="fa fa-img-down"></i>
                                                                     </span>
-                                                                    <span class="sale-num"> 87 </span>
+                                                                    <span class="sale-num">  <?php echo rand(5, 100); ?> </span>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -144,12 +144,12 @@
                                                 </ul>
                                                 <div class="tab-content">
 	                                                 <div class="tab-pane active " id="tab_1_33">
-															<b># Exploit Title</b>    : OpenCart <= 1.5.6.1 SQL Injection<br/>
-															<b># Fecha</b>               : 2014/3/26<br/>
-															<b># Exploit Autor</b>     : Saadat Ullah ， saadi_linux@rocketmail.com<br/>
+															<b># Exploit Title</b>    : <?php echo $bug['nombre_vulnerabilidad']; ?><br/>
+															<b># Fecha</b>               : <?php echo $bug['fecha_vulnerabilidad']; ?><br/>
+															<b># Exploit Autor</b>     : <?php echo $bug['autor_vulnerabilidad']; ?><br/>
 															<b># Software Link</b>      : http://www.opencart.com/index.php?route=download/download<br/>
 															<b># Software web</b>       : www.opencart.com<br/>
-															<b># Autor Web</b>    : http://security-geeks.blogspot.com/<br/>
+															<b># Autor Web</b>    : <?php echo $bug['autor_web_vulnerabilidad']; ?><br/>
 															<b># Probado en</b> : Server : Apache/2.2.15 PHP/5.3.3	<br/>                       
 													</div>
 	                                                  <div class="tab-pane " id="tab_1_44">

@@ -75,20 +75,20 @@
 				$block = $this->load->model("Block");
 				
 				$isblock = $block->getBlock($this->request->post);
-				
 				if($isblock == true){
 					
 					$json["response"] = "true";
 					
 					$this->response->setOutput(json_encode($json));
 					
+				}else{
+					$json["response"] = "false";
+					
+					$this->response->setOutput(json_encode($json));
+					
 				}
-				
-				
 			}else{
-				
 				$this->response->setOutput("Error Auth");
-				
 			}
 
 		}else{
