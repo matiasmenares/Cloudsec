@@ -26,13 +26,11 @@
                                     <i class="fa fa-globe"></i>
                                 </div>
                                 <div class="details">
-                                    <div class="number"> +
-                                        <span data-counter="counterup" data-value="89">89</span>% </div>
-                                    <div class="desc"> Brand Popularity </div>
+                                    <div class="number"> -
+                                        <span data-counter="counterup" data-value="89">20</span>% </div>
+                                    <div class="desc"> Ataques </div>
                                 </div>
-                                <a class="more" href="javascript:;"> View more
-                                    <i class="m-icon-swapright m-icon-white"></i>
-                                </a>
+
                             </div>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -42,12 +40,10 @@
                                 </div>
                                 <div class="details">
                                     <div class="number">
-                                        <span data-counter="counterup" data-value="12,5">12,5</span>M$ </div>
-                                    <div class="desc"> Total Profit </div>
+                                        <span data-counter="counterup" data-value="12,5">8050</span></div>
+                                    <div class="desc"> Cve  </div>
                                 </div>
-                                <a class="more" href="javascript:;"> View more
-                                    <i class="m-icon-swapright m-icon-white"></i>
-                                </a>
+  
                             </div>
                         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -57,13 +53,11 @@
                                 </div>
                                 <div class="details">
                                     <div class="number">
-                                        <span data-counter="counterup" data-value="549">549</span>
+                                        <span data-counter="counterup" data-value="549">5490</span>
                                     </div>
-                                    <div class="desc"> New Orders </div>
+                                    <div class="desc"> Consultas </div>
                                 </div>
-                                <a class="more" href="javascript:;"> View more
-                                    <i class="m-icon-swapright m-icon-white"></i>
-                                </a>
+
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -75,11 +69,9 @@
                                     <div class="number">
                                         <span data-counter="counterup" data-value="1349">1349</span>
                                     </div>
-                                    <div class="desc"> New Feedbacks </div>
+                                    <div class="desc"> Mitigados </div>
                                 </div>
-                                <a class="more" href="javascript:;"> View more
-                                    <i class="m-icon-swapright m-icon-white"></i>
-                                </a>
+
                             </div>
                         </div>
             

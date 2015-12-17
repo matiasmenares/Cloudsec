@@ -1,17 +1,25 @@
 <?php
 	
- class AppDetail extends Controller {
+ class LogDetail extends Controller {
 	
 		
 	public function index() {
 		
 		if($this->request->get['var1']){
 		
-			$App = $this->load->model("App");
+			$log = $this->load->model("Log");
 			
-			$output['detail'] = $App->getApp($this->request->get['var1']);
-						
-		$this->render("app/detail.php",$output);
+			$output['detail'] = $log->getLog($this->request->get['var1']);
+			
+			if(isset($this->request->post['bloquear'])){
+			
+			$bloqueo = $this->load->model("Block");
+			
+			$bloqueo->block(1);
+
+			}
+
+			$this->render("log/detail.php",$output);
 		}else{
 			$this->system->redirect("home/");
 		}

@@ -1,4 +1,3 @@
-
 </head>
 <link rel="stylesheet" href ="<?php echo TEMPLATE; ?>/css/profile.css" />
 <link rel="stylesheet" href ="<?php echo TEMPLATE; ?>plugins/bootstrap-switch/css/bootstrap-switch.css" />
@@ -51,12 +50,12 @@
                 	<i class="fa fa-angle-right"></i>
                 <li>
                     <i class="fa fa-bug"></i>
-                    Bug
+                    Log
                 </li>
 					<i class="fa fa-angle-right"></i>
 				<li>
                     <i class="fa fa-bug"></i>
-                   Detalle Bug
+                   Detalle Log
                 </li>
             </ul>
             <div class="page-toolbar">
@@ -66,18 +65,10 @@
                     </button>
                     <ul class="dropdown-menu pull-right" role="menu">
                         <li>
-                            <a href="#">Detener</a>
-                        </li>
-                        <li>
-                            <a href="#">Another action</a>
-                        </li>
-                        <li>
-                            <a href="#">Something else here</a>
-                        </li>
-                        <li class="divider">
-                        </li>
-                        <li>
-                            <a href="#">Separated link</a>
+                        <form action="" method="post">
+	                        <input type="hidden" value="bloquear" name="bloquear">
+                            <button  type="submit"> Bloquear</a>
+                        </form>
                         </li>
                     </ul>
                 </div>
@@ -88,155 +79,65 @@
       <div class="tab-content portlet light ">
                                 <div class="tab-pane active" id="tab_1_1">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <ul class="list-unstyled profile-nav">
-                                                <li>
-                                                    <img src="image/img-app/bug.png" class="img-responsive pic-bordered" alt="">
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-9">
+										<div class="col-md-9">
                                             <div class="row">
-                                                <!--end col-md-8-->
-                                                <div class="col-md-4">
-                                                    <div class="portlet sale-summary">
-                                                        <div class="portlet-title">
-                                                            <div class="caption font-red sbold"> CVE-2015-003 </div>
-                                                            <div class="tools">
-                                                                <a class="reload" href="javascript:;" data-original-title="" title=""> </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="portlet-body">
-                                                            <ul class="list-unstyled">
-                                                                <li>
-                                                                    <span class="sale-info"> Detecciones
-                                                                        <i class="fa fa-img-up"></i>
-                                                                    </span>
-                                                                    <span class="sale-num"> 23 </span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="sale-info"> Mitigaciones
-                                                                        <i class="fa fa-img-down"></i>
-                                                                    </span>
-                                                                    <span class="sale-num"> 87 </span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--end col-md-4-->
+                                         
                                             </div>
                                             <!--end row-->
                                             <div class="tabbable-line tabbable-custom-profile">
                                                 <ul class="nav nav-tabs">
                                                     <li class="active">
-                                                        <a href="#tab_1_11" data-toggle="tab" aria-expanded="true"> Ultimos Reportes </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#tab_1_22" data-toggle="tab" aria-expanded="true"> Actividad </a>
+                                                        <a href="#tab_1_33" data-toggle="tab" aria-expanded="true"> Información </a>
                                                     </li>
                                                 </ul>
                                                 <div class="tab-content">
-                                                    <div class="tab-pane active" id="tab_1_11">
+	                                                 <div class="tab-pane active " id="tab_1_33">
+															<b># IP </b>    : <?php echo $detail['ip']; ?><br/>
+															<b># Fecha</b>	: <?php echo date("d-m-Y H:i:s", strtotime($detail['fecha_log_sistema'])); ?><br/>
+															<b># Navegador</b>     : <?php echo $detail['nombre_navegador']; ?><br/>
+															<b># URL</b>	: http://localhost/megagames/index.php?route=download/download<br/>
+															<b># Ciudad</b>	: Santiago<br/>																				</div>
+	                                                  <div class="tab-pane " id="tab_1_44">
+		                                                 Solución
+	                                                 </div>
+                                                    <div class="tab-pane " id="tab_1_11">
                                                         <div class="portlet-body">
                                                             <table class="table table-striped table-bordered table-advance table-hover">
                                                                 <thead>
                                                                     <tr>
                                                                         <th>
-                                                                            <i class="fa fa-briefcase"></i> Company </th>
+                                                                            <i class="fa fa-rocket"></i> Aplicación </th>
                                                                         <th class="hidden-xs">
-                                                                            <i class="fa fa-question"></i> Descrition </th>
+                                                                            <i class="fa fa-info"></i> Descripción </th>
                                                                         <th>
-                                                                            <i class="fa fa-bookmark"></i> Amount </th>
+                                                                            <i class="fa fa-calendar"></i> Fecha </th>
                                                                         <th> </th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href="javascript:;"> Pixel Ltd </a>
+                                                                            <a href="javascript:;"> CloudSec  </a>
                                                                         </td>
-                                                                        <td class="hidden-xs"> Server hardware purchase </td>
-                                                                        <td> 52560.10$
-                                                                            <span class="label label-success label-sm"> Paid </span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <a href="javascript:;"> Smart House </a>
-                                                                        </td>
-                                                                        <td class="hidden-xs"> Office furniture purchase </td>
-                                                                        <td> 5760.00$
-                                                                            <span class="label label-warning label-sm"> Pending </span>
+                                                                        <td class="hidden-xs"> Detectado en URL : http://localhost/megagames/index.php </td>
+                                                                        <td> 2015/10/5
                                                                         </td>
                                                                         <td>
                                                                             <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
                                                                         </td>
                                                                     </tr>
-                                                                    <tr>
+                                                                      <tr>
                                                                         <td>
-                                                                            <a href="javascript:;"> FoodMaster Ltd </a>
+                                                                            <a href="javascript:;"> CloudSec  </a>
                                                                         </td>
-                                                                        <td class="hidden-xs"> Company Anual Dinner Catering </td>
-                                                                        <td> 12400.00$
-                                                                            <span class="label label-success label-sm"> Paid </span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <a href="javascript:;"> WaterPure Ltd </a>
-                                                                        </td>
-                                                                        <td class="hidden-xs"> Payment for Jan 2013 </td>
-                                                                        <td> 610.50$
-                                                                            <span class="label label-danger label-sm"> Overdue </span>
+                                                                        <td class="hidden-xs"> Detectado en URL : http://localhost/megagames/index.php </td>
+                                                                        <td> 2015/10/5
                                                                         </td>
                                                                         <td>
                                                                             <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
                                                                         </td>
                                                                     </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <a href="javascript:;"> Pixel Ltd </a>
-                                                                        </td>
-                                                                        <td class="hidden-xs"> Server hardware purchase </td>
-                                                                        <td> 52560.10$
-                                                                            <span class="label label-success label-sm"> Paid </span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <a href="javascript:;"> Smart House </a>
-                                                                        </td>
-                                                                        <td class="hidden-xs"> Office furniture purchase </td>
-                                                                        <td> 5760.00$
-                                                                            <span class="label label-warning label-sm"> Pending </span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <a href="javascript:;"> FoodMaster Ltd </a>
-                                                                        </td>
-                                                                        <td class="hidden-xs"> Company Anual Dinner Catering </td>
-                                                                        <td> 12400.00$
-                                                                            <span class="label label-success label-sm"> Paid </span>
-                                                                        </td>
-                                                                        <td>
-                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
+																</tbody>
                                                             </table>
                                                         </div>
                                                     </div>

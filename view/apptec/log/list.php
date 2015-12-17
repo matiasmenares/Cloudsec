@@ -126,7 +126,7 @@ $(document).ready(function() {
                 "defaultContent": "",
                 "render": function (data)
                 {
-					return '<a class="btn green fileinput-button" href="bug/detail/'+data+'/">Ver Detalle</a>';
+					return '<a class="btn green fileinput-button" href="log/detail/'+data+'/">Ver Detalle</a>';
 				} 
 			},
         ]
