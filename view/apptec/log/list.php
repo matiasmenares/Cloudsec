@@ -74,6 +74,9 @@
 										<th>
 											Fecha
 										</th>
+										<th>
+											Fecha
+										</th>
 										<th width="50px">
 											Accion
 										</th>
@@ -119,6 +122,16 @@ $(document).ready(function() {
 			{ "data": 2 },
             { "data": 3 },
             { "data": 4 },
+            {
+            	"class":          "details-control",
+                "orderable":      false,
+                "data":           0,
+                "defaultContent": "",
+                "render": function (data)
+                {
+					return '<span class="label label-sm label-danger">Riesgo de Ataque</span>';
+				} 
+			},
 			{
             	"class":          "details-control",
                 "orderable":      false,

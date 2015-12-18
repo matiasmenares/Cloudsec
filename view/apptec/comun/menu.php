@@ -80,13 +80,6 @@
                     </li>
 				</ul>
             </li>
-			<li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
-                <a href="categoria/lista/">
-                <i class="fa fa-user"></i>
-                <span class="title">Usuarios</span>
-                <span <?php if($_SESSION['menu']=='lista-categoria') echo 'class="selected"'; ?>></span>
-                </a>
-            </li>
             <li  <?php if($_SESSION['menu']=='lista-categoria') echo 'class="active"'; ?>>
                 <a href="categoria/lista/">
                 <i class="fa fa-cog"></i>

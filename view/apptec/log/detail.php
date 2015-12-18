@@ -95,8 +95,9 @@
 															<b># IP </b>    : <?php echo $detail['ip']; ?><br/>
 															<b># Fecha</b>	: <?php echo date("d-m-Y H:i:s", strtotime($detail['fecha_log_sistema'])); ?><br/>
 															<b># Navegador</b>     : <?php echo $detail['nombre_navegador']; ?><br/>
-															<b># URL</b>	: http://localhost/megagames/index.php?route=download/download<br/>
-															<b># Ciudad</b>	: Santiago<br/>																				</div>
+															<b># URL</b>	: http://localhost/megagames/index.php?route=product/product&path=70&product_id=581' AND (SELECT * FROM (SELECT(SLEEP(5)))OJQq) AND 'XCap'='XCap <br/>
+															<b># Ciudad</b>	: Santiago<br/>		
+															<b># Riesgo</b>: <span class="label label-sm label-danger">Intento de Inyección SQL</span>																		</div>
 	                                                  <div class="tab-pane " id="tab_1_44">
 		                                                 Solución
 	                                                 </div>
