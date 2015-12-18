@@ -794,14 +794,13 @@ var ctx = document.getElementById("myChart").getContext("2d");
         ]
         
         });
-        
  var chart = AmCharts.makeChart("chartdiv", {
     "type": "serial",
-    "theme": "dark",
+    "theme": "light",
     "marginRight": 80,
     "marginTop": 17,
     "autoMarginOffset": 20,
-    "dataProvider": [{
+        "dataProvider": [{
         "date": "2015-01-01",
         "price": 20
     }, {
@@ -880,7 +879,7 @@ var ctx = document.getElementById("myChart").getContext("2d");
 chart.addListener("dataUpdated", zoomChart);
 
 function zoomChart() {
-    chart.zoomToDates(new Date(2015, 01, 01), new Date(2015, 12, 18));
+    chart.zoomToDates(new Date(2015, 02, 01), new Date(2015, 12, 18));
 }
 </script>
 
