@@ -135,9 +135,6 @@
                                                     <li>
                                                         <a href="#tab_1_11" data-toggle="tab" aria-expanded="true"> Últimos Reportes </a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#tab_1_22" data-toggle="tab" aria-expanded="true"> Actividad </a>
-                                                    </li>
                                                       <li>
                                                         <a href="#tab_1_44" data-toggle="tab" aria-expanded="true"> Solución </a>
                                                     </li>
@@ -153,7 +150,7 @@
 															<b># Probado en</b> : Server : Apache/2.2.15 PHP/5.3.3	<br/>                       
 													</div>
 	                                                  <div class="tab-pane " id="tab_1_44">
-		                                                 Solución
+		                                                 Parchar Archivo common/checkout/cart.php
 	                                                 </div>
                                                     <div class="tab-pane " id="tab_1_11">
                                                         <div class="portlet-body">
@@ -166,7 +163,6 @@
                                                                             <i class="fa fa-info"></i> Descripción </th>
                                                                         <th>
                                                                             <i class="fa fa-calendar"></i> Fecha </th>
-                                                                        <th> </th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -177,9 +173,7 @@
                                                                         <td class="hidden-xs"> Detectado en URL : http://localhost/megagames/index.php </td>
                                                                         <td> 2015/10/5
                                                                         </td>
-                                                                        <td>
-                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
-                                                                        </td>
+
                                                                     </tr>
                                                                       <tr>
                                                                         <td>
@@ -188,9 +182,7 @@
                                                                         <td class="hidden-xs"> Detectado en URL : http://localhost/megagames/index.php </td>
                                                                         <td> 2015/10/5
                                                                         </td>
-                                                                        <td>
-                                                                            <a class="btn btn-sm grey-salsa btn-outline" href="javascript:;"> View </a>
-                                                                        </td>
+
                                                                     </tr>
 																</tbody>
                                                             </table>
@@ -210,10 +202,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="cont-col2">
-                                                                                    <div class="desc"> You have 4 pending tasks.
-                                                                                        <span class="label label-danger label-sm"> Take action
-                                                                                            <i class="fa fa-share"></i>
-                                                                                        </span>
+                                                                                    <div class="desc"> Parches Liberados.
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
