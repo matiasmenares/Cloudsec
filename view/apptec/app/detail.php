@@ -560,16 +560,16 @@
 																				ID
 																			</th>
 																			<th>
-																				Nombre
-																			</th>
-																			<th>
-																				Lenguaje
+																				Fecha
 																			</th>
 																			<th>
 																				IP
 																			</th>
 																			<th>
-																				Estado
+																				Navegador
+																			</th>
+																			<th>
+																				ISP
 																			</th>
 																			<th width="50px">
 																				Accion
@@ -615,34 +615,34 @@
 						                                                    <th> Apache </th>
 						                                                    <th> /etc/httpd/apache/ </th>
 						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                        <span class="label label-sm label-success"> Corriendo </span>
 						                                                    </td>
 																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
 						                                                </tr>
 						                                                <tr>
 						                                                    <td> 2 </td>
 						                                                    <th> OpenSSL </th>
-						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <th> /etc/init.d/ssl </th>
 						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                        <span class="label label-sm label-success"> Corriendo </span>
 						                                                    </td>
 																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
 						                                                </tr>
 						                                                <tr>
 						                                                    <td> 3 </td>
 						                                                    <th> Mail </th>
-						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <th> /etc/init.d/mail </th>
 						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                        <span class="label label-sm label-success"> Corriendo </span>
 						                                                    </td>
 																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
 						                                                </tr>
 						                                                <tr>
 						                                                    <td> 4 </td>
 						                                                    <th> MySQL </th>
-						                                                    <th> /etc/httpd/apache/ </th>
+						                                                    <th> /etc/init.d/mysql </th>
 						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
+						                                                        <span class="label label-sm label-success"> Corriendo </span>
 						                                                    </td>
 																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
 						                                                </tr>
@@ -679,13 +679,6 @@
 						                                                </tr>
 						                                                <tr>
 						                                                    <th colspan="2"> Alertas </th>
-						                                                    <td>
-						                                                        <span class="label label-sm label-success"> Running </span>
-						                                                    </td>
-																			<td> <input type="checkbox" name="my-checkbox" checked> </td>
-						                                                </tr>
-						                                                <tr>
-						                                                    <th colspan="2"> MySQL </th>
 						                                                    <td>
 						                                                        <span class="label label-sm label-success"> Running </span>
 						                                                    </td>

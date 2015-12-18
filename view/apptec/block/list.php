@@ -27,8 +27,8 @@
                 </li>
                 <li><i class="fa fa-angle-right"></i></li>
                 <li>
-                    <i class="fa fa-bug"></i>
-                    Lista Vulnerabilidades
+                    <i class="fa fa-shield"></i>
+                    Lista de bloqueos
                 </li>
             </ul>
             <div class="page-toolbar">
@@ -46,7 +46,7 @@
 						<!-- BEGIN EXAMPLE TABLE PORTLET-->
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-exchange"></i>Logs
+								<i class="fa fa-shield"></i>Bloqueos
 							</div>
 							<div class="tools">
 								<a href="javascript:;" class="reload">
@@ -66,20 +66,15 @@
 											IP
 										</th>
 										<th>
-											Navegador
-										</th>
-										<th>
-											Ciudad
-										</th>
-										<th>
 											Fecha
 										</th>
 										<th>
 											Aplicación
 										</th>
-											<th>
-											Riesgo
+										<th>
+											Estado
 										</th>
+
 										<th width="50px">
 											Accion
 										</th>
@@ -116,15 +111,13 @@ $(document).ready(function() {
         "responsive": true,
         "serverSide": true,
         "ajax": {
-            "url": "datatable/app_loglist/",
+            "url": "datatable/app_block/",
             "type": "POST"
         },
         "columns": [
             { "data": 0 },
             { "data": 1 },
 			{ "data": 2 },
-            { "data": 3 },
-            { "data": 4 },
 			{
             	"class":          "details-control",
                 "orderable":      false,
@@ -142,7 +135,7 @@ $(document).ready(function() {
                 "defaultContent": "",
                 "render": function (data)
                 {
-					return '<span class="label label-sm label-danger">Riesgo de Ataque</span>';
+					return '<span class="label label-sm label-danger">Bloqueado</span>';
 				} 
 			},
 			{
@@ -152,7 +145,7 @@ $(document).ready(function() {
                 "defaultContent": "",
                 "render": function (data)
                 {
-					return '<a class="btn green fileinput-button" href="log/detail/'+data+'/">Ver Detalle</a>';
+					return '<a class="btn green fileinput-button" href="block/list/'+data+'/">Desbloquear</a>';
 				} 
 			},
         ]

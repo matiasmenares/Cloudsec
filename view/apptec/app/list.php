@@ -137,7 +137,7 @@ $(document).ready(function() {
                 "defaultContent": "",
                 "render": function (data)
                 {
-					return 'Running';
+					return 'Corriendo';
 				} 
 			},
 

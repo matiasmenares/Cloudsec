@@ -17,7 +17,8 @@
 			
 			$bloqueo->block(1);
 			
-			$this->system->notify(2,"Bloqueado", "¡IP Bloqueada Con Éxito!");
+			$this->system->notify(2,"Bloqueado", "¡IP Bloqueada!");
+
 
 			}
 

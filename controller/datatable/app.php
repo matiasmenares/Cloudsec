@@ -80,6 +80,25 @@
 			    SSP::simple(null,$this->request->post, $sql_details, $table, $primaryKey, $columns )
 			);
 		}
+	}
+	
+	public function Block() {
+		
+		if(!empty($this->request->post)){
+			$table = 'bloqueo';
+			 
+			$primaryKey = 'id_bloqueo';
+			 
+			$columns = array(
+			    array( 'db' => 'id_bloqueo', 'dt' => 0 ),
+				array( 'db' => 'ip', 'dt' => 1 ),
+				array( 'db' => 'fecha_inicio_bloqueo', 'dt' => 2 ),
+			);
+			require( 'ssp/block.ssp.php' );
+			echo json_encode(
+			    SSP::simple(null,$this->request->post, $sql_details, $table, $primaryKey, $columns )
+			);
+		}
 	}						
 	
 }

@@ -13,6 +13,12 @@ class ClassBlock extends Model {
 
  		return $this->db->execute();
 	}
+	
+	public function deleteBlock($data){
+		$this->db->query("DELETE FROM bloqueo WHERE bloqueo.id_bloqueo = '".$this->db->escape($data)."'");
+
+ 		return $this->db->execute();
+	}
 
 }
 	

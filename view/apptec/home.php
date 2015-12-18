@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="details">
                                     <div class="number">
-                                        <span data-counter="counterup" data-value="549">5490</span>
+                                        <span data-counter="counterup" data-value="549">548990</span>
                                     </div>
                                     <div class="desc"> Consultas </div>
                                 </div>
@@ -120,7 +120,7 @@
                                                     <th> Servidor </th>
                                                     <th> IP </th>
                                                     <th> Estado </th>
-                                                    <th> Tasa </th>
+                                                    <th> Uptime </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -132,7 +132,7 @@
                                                 </td>
                                                 <td> <?php  echo $value['nombre_host']; ?> </td>
                                                 <td> <?php  echo $value['ip_aplicacion'];?></td>
-                                                <td> Fine </td>
+                                                <td> Corriendo </td>
                                                 <td>
                                                     <span class="bold theme-font">98%</span>
                                                 </td>
@@ -189,8 +189,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> You have 4 pending tasks.
-                                                                <span class="label label-sm label-warning "> Take action
+                                                            <div class="desc"> 4 intentos de ataque.
+                                                                <span class="label label-sm label-warning "> 
                                                                     <i class="fa fa-share"></i>
                                                                 </span>
                                                             </div>
@@ -198,7 +198,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col2">
-                                                    <div class="date"> Just now </div>
+                                                    <div class="date"> Ahora </div>
                                                 </div>
                                             </li>
                                             <li>
@@ -211,12 +211,12 @@
                                                                 </div>
                                                             </div>
                                                             <div class="cont-col2">
-                                                                <div class="desc"> Finance Report for year 2013 has been released. </div>
+                                                                <div class="desc"> 3 Bloqueos. </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col2">
-                                                        <div class="date"> 20 mins </div>
+                                                        <div class="date"> Ayer </div>
                                                     </div>
                                                 </a>
                                             </li>
@@ -229,12 +229,12 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> You have 5 pending membership that requires a quick review. </div>
+                                                            <div class="desc"> 5 CVE's agregados a la base de datos. </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col2">
-                                                    <div class="date"> 24 mins </div>
+                                                    <div class="date"> Ayer </div>
                                                 </div>
                                             </li>
                                             <li>
@@ -246,14 +246,14 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> New order received with
-                                                                <span class="label label-sm label-success"> Reference Number: DR23923 </span>
+                                                            <div class="desc"> SQLi Detectado
+                                                                <span class="label label-sm label-success"> Aplicación: CloudSec </span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col2">
-                                                    <div class="date"> 30 mins </div>
+                                                    <div class="date"> 2 días </div>
                                                 </div>
                                             </li>
                                             <li>
@@ -265,7 +265,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> You have 5 pending membership that requires a quick review. </div>
+                                                            <div class="desc"> 4 Reportes sospechosos pendientes. </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -282,14 +282,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> Web server hardware needs to be upgraded.
-                                                                <span class="label label-sm label-default "> Overdue </span>
+                                                            <div class="desc">Aplicación agregada.
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col2">
-                                                    <div class="date"> 2 hours </div>
+                                                    <div class="date"> Ayer </div>
                                                 </div>
                                             </li>
                                             <li>
@@ -302,12 +301,12 @@
                                                                 </div>
                                                             </div>
                                                             <div class="cont-col2">
-                                                                <div class="desc"> IPO Report for year 2013 has been released. </div>
+                                                                <div class="desc"> Ataque mitigado. </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col2">
-                                                        <div class="date"> 20 mins </div>
+                                                        <div class="date"> Ayer </div>
                                                     </div>
                                                 </a>
                                             </li>
@@ -320,8 +319,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="cont-col2">
-                                                            <div class="desc"> You have 4 pending tasks.
-                                                                <span class="label label-sm label-warning "> Take action
+                                                            <div class="desc"> 10 CVE's Agregados.
+                                                                <span class="label label-sm label-warning "> Revisar
                                                                     <i class="fa fa-share"></i>
                                                                 </span>
                                                             </div>
@@ -329,7 +328,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col2">
-                                                    <div class="date"> Just now </div>
+                                                    <div class="date"> Semana Pasada </div>
                                                 </div>
                                             </li>
                                             <li>
@@ -514,7 +513,7 @@
 	            pointStrokeColor: "#fff",
 	            pointHighlightFill: "#fff",
 	            pointHighlightStroke: "rgba(151,187,205,1)",
-	            data: [28, 48, 40, 19, 96, 27, 100]
+	            data: [14, 22, 30, 19, 30, 27, 30]
 	        }
 	    ]
 	};
