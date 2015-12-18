@@ -722,8 +722,8 @@
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>plugins/ammap/plugins/responsive/responsive.min.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>js/map.js"></script>
 <script type="text/javascript" src="<?php echo TEMPLATE; ?>js/amchart.js"></script>
+<script type="text/javascript" src="<?php echo TEMPLATE; ?>js/serial.js"></script>
 
-<script src="https://www.amcharts.com/lib/3/serial.js"></scrip>
 <script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
 
 </body>
