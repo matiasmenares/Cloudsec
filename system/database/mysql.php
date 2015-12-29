@@ -273,13 +273,13 @@ class Conectar extends Secure{
         $to = ADMIN_REPORT;
 
         // Subjects
-        $subject = 'Apptec: '.$msg;
+        $subject = 'CloudSec: '.$msg;
 
         // Mensaje
         $message = '
             <html>
             <head>
-              <title>Apptec.cl :'.$msg.'</title>
+              <title>Alert :'.$msg.'</title>
               <style>
               body, table, td{
                 font-family: Arial;

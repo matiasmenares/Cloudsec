@@ -14,17 +14,16 @@ class Secure {
 	private function alerta($msg){
 
         // Multiples Receptores
-        $to = 'matias.menares@apptec.cl';
-        $to .= ',dejaaymts@gmail.com';
+        $to = 'dejaaymts@gmail.com';
 
         // Subjects
-        $subject = 'Apptec: Alerta en Base de Datos';
+        $subject = 'Error: Alerta en Base de Datos';
 
         // Mensaje
         $message = '
             <html>
             <head>
-              <title>Apptec.cl : Alerta en Base de Datos</title>
+              <title>Error : Alerta en Base de Datos</title>
               <style>
               body, table, td{
                 font-family: Arial;
@@ -57,7 +56,7 @@ class Secure {
                   <tr>
                     <td valing="top">Acciones</td>
                     <td valing="top">
-                        <a href="http://www.inforemate.cl/secure/blockIp.php?id='.str_replace(".", "_", $_SERVER['REMOTE_ADDR']).'" target="_blank">Bloquear IP</a><br /><br />
+                        <a href="http://localhost/secure/blockIp.php?id='.str_replace(".", "_", $_SERVER['REMOTE_ADDR']).'" target="_blank">Bloquear IP</a><br /><br />
                         <a href="http://whatismyipaddress.com/ip/'.$_SERVER['REMOTE_ADDR'].'" target="_blank">Ver datos de IP</a><br />
                     </td>
                   </tr>

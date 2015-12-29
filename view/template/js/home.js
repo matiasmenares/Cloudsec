@@ -39,7 +39,7 @@ function getWeather() {
 			$( "#respuestaTransantiago" ).html('<div class="text-center"><i class="fa fa-refresh fa-spin fa-3x font-grey-gallery padding"></i></div>');	
 		var paradero=$('#paradero').val();
 		var request = $.ajax({
-			url: "view/apptec/ajax/transantiago.php?paradero="+paradero,
+			url: "view/template/ajax/transantiago.php?paradero="+paradero,
 			method: "GET",
 			dataType: "html"
 		});
