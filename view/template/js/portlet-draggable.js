@@ -42,7 +42,7 @@ var PortletDraggable = function () {
             });
             function statusServer(variables){	
 				var request = $.ajax({
-                    url: "view/apptec/ajax/administrar-negocio.php?"+variables,		
+                    url: "view/template/ajax/administrar-negocio.php?"+variables,		
                     method: "GET",
 					dataType: "html"
 				});
