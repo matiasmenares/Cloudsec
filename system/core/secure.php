@@ -81,7 +81,7 @@ class Secure {
         $headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
 
         // Headers
-        $headers .= 'From: Apptec WebServer <secure@apptec.cl>'."\r\n";
+        $headers .= 'From: WebServer <secure@cloudsec.cl>'."\r\n";
 
         // Mail 
         mail($to, $subject, $message, $headers);
