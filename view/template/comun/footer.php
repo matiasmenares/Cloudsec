@@ -1,7 +1,7 @@
 <!-- BEGIN FOOTER -->
 <div classa="page-footer">
 	<div class="page-footer-inner">
-		 Apptec
+		 CloudSec
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>

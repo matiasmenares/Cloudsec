@@ -3,7 +3,7 @@
 define('TITULO', 'CloudSec');
 
 define('URL_FRONTEND', 'http://localhost/cloudsec/');	
-define('TEMPLATE', 'view/apptec/');	
+define('TEMPLATE', 'view/template/');	
 define('URL_VIEW', URL_FRONTEND.TEMPLATE);		
 	
 define('URL_FOTOS', 'image/');
@@ -15,7 +15,7 @@ define('DIR_FOTOS_BAJAS', 'low-resolution/');
 
 define('IDIOMA', 'espanol/');
 
-define('SESSION_NAME', 'ClodSec');
+define('SESSION_NAME', 'CloudSec');
 
 define('VIEW_DIR', 'view/');
 define('CONTROLLER_DIR', 'controller/');

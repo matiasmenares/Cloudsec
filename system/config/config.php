@@ -3,7 +3,7 @@
 define('TITULO', 'CloudSec');
 
 define('URL_FRONTEND', 'http://192.168.1.101/cloudsec/');	
-define('TEMPLATE', 'view/apptec/');	
+define('TEMPLATE', 'view/template/');	
 define('URL_VIEW', URL_FRONTEND.TEMPLATE);		
 	
 define('URL_FOTOS', 'image/');

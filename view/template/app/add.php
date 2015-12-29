@@ -172,29 +172,20 @@
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Lenguaje Frontend
+		                            <label class="control-label col-md-3">Ecommerce Frontend
 		                                <span class="required" aria-required="true"> * </span>
 		                            </label>
 		                            <div class="col-md-4">
 									<select name="leng_front" id="front_end_lang" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-		                                    <option value="">Ninguno</option>
-										<?php foreach($front as $key => $value){ ?>
-		                                <option value="<?php echo $value['id_code_frontend']; ?>"><?php echo $value['nombre_code_frontend']; ?></option>
-		                                <?php } ?>
+		                                    <option value="Opencart">Opencart</option>
+		                                    <option value="Magento">Magento</option>
+											<option value="PrestaShop">PrestaShop</option>
+									
 		                            </select>
 										<span class="help-block">Lenguaje de Frontend</span>
 		                            </div>
 		                        </div>
-		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Lenguaje Backend</label>
-		                            <div class="col-md-4">
-		                                <select name="leng_back" id="back_end_lang" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-										<?php foreach($back as $key => $value){ ?>
-		                                <option value="<?php echo $value['id_code_backend']; ?>"><?php echo $value['nombre_code_backend']; ?></option>
-		                                <?php } ?>
-		                                </select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-country_list-container"><span class="select2-selection__rendered" id="select2-country_list-container"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-		                            </div>
-		                        </div>
+		                        
 		                        <div class="form-group">
 		                            <label class="control-label col-md-3">Detalle</label>
 		                            <div class="col-md-4">
@@ -287,15 +278,9 @@
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Lenguaje Frontend:</label>
+		                            <label class="control-label col-md-3">Ecommerce :</label>
 		                            <div class="col-md-4">
 		                                <p class="form-control-static" data-display="leng_front"> </p>
-		                            </div>
-		                        </div>
-		                        <div class="form-group">
-		                            <label class="control-label col-md-3">Lenguaje Frontend:</label>
-		                            <div class="col-md-4">
-		                                <p class="form-control-static" data-display="leng_back"> </p>
 		                            </div>
 		                        </div>
 		                        <div class="form-group">
